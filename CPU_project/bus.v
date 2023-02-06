@@ -4,7 +4,21 @@ input wire clock, clear,
 
 input wire R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9in,
 	R10in, R11in, R12in, R13in, R14in, R15in, HIin, LOin, Zhighin, Zlowin,
-	PCin, MDRin, OutPortin, Cin, MARin, IRin, Yin
+	PCin, MDRin, OutPortin, Cin, MARin, IRin, Yin, Zin,
+	
+input wire R0out, R1out, R2out, R3out, 
+	R4out, R5out, R6out, R7out, R8out, 
+	R9out, R10out, R11out, R12out, R13out, 
+	R14out, R15out, HIout, LOout, ZHIout, 
+	ZLOout, PCout, MDRout, Inportout, Cout,
+	
+input wire IncPC, read,
+
+input wire [31:0] Mdatain,
+
+input wire Zout,
+	
+input wire [4:0] operation
 );
 
 	wire [31:0] busMuxIn_0R, busMuxIn_1R, busMuxIn_2R, busMuxIn_3R, 
@@ -15,9 +29,14 @@ input wire R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9in,
 
 	wire [4:0] Muxread;
 	wire [31:0] Muxout;
+	wire [31:0] MDR_mux_out;
+	
+	wire [63:0] z_data_out;
 	
 	wire [31:0] encodein;
 	wire [4:0] encodeout;
+	
+	mux_MDR MDRmux(Muxout, Mdatain, read, MDR_mux_out);
 
 	 mux_32_1 mux (busMuxIn_0R, busMuxIn_1R, busMuxIn_2R, busMuxIn_3R, busMuxIn_4R,
 		busMuxIn_5R, busMuxIn_6R, busMuxIn_7R, busMuxIn_8R, 
@@ -27,7 +46,12 @@ input wire R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9in,
 		Muxread, Muxout);
 		
 	
-	encoder_32_5 encoder (encodein, encodeout);
+	
+	encoder_32_5 encoder (R0out, R1out, R2out, R3out, 
+	R4out, R5out, R6out, R7out, R8out, 
+	R9out, R10out, R11out, R12out, R13out, 
+	R14out, R15out, HIout, LOout, ZHIout, 
+	ZLOout, PCout, MDRout, Inportout, Cout, encodeout);
 	
 	
 	register register0 (clock, clear, R0in, Muxout, busMuxIn_0R);
@@ -48,10 +72,10 @@ input wire R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9in,
 	register register15 (clock, clear, R15in, Muxout, busMuxIn_15R);
 	register registerHI (clock, clear, HIin, Muxout, busMuxIn_HI);
 	register registerLO (clock, clear, LOin, Muxout, busMuxIn_LO);
-	register registerZHI (clock, clear, Zhighin, Muxout, busMuxIn_ZHI);
-	register registerZLO (clock, clear, Zlowin, Muxout, busMuxIn_ZLO);
+	register registerZHI (clock, clear, Zhighin, z_data_out[63:32], busMuxIn_ZHI);
+	register registerZLO (clock, clear, Zlowin, z_data_out[31:0], busMuxIn_ZLO);
 	register registerPC (clock, clear, PCin, Muxout, busMuxIn_PC);
-	register registerMDR (clock, clear, MDRin, Muxout, busMuxIn_MDR);
+	register registerMDR (clock, clear, MDRin, MDR_mux_out, busMuxIn_MDR);
 	register registerInPort (clock, clear, OutPortin, Muxout, busMuxIn_InPort);
 	register registerC (clock, clear, Cin, Muxout, busMuxIn_C);
 	
@@ -62,5 +86,8 @@ input wire R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9in,
 	register registerY (clock, clear, Yin, Muxout, Y_data_out);
 	
 	assign Muxread = encodeout;
+	
+	alu this_alu(Muxout, Muxout, operation, z_data_out);
+	
 	
 endmodule

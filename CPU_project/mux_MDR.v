@@ -1,8 +1,8 @@
-module mux_mdr (
+module mux_MDR(
 	input wire [31:0] busMuxOut,
 	input wire [31:0] mDataIn,
 	
-	input wire [2:0] read,
+	input wire read,
 	output reg [31:0] out
 );
 

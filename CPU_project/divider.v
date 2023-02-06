@@ -3,7 +3,7 @@
 `timescale 1ns/10ps
 module divider(A, B, C);
 input [31:0] A, B; //A is Quotient, B is Divisor M
-output reg [31:0] C;
+output reg [63:0] C;
 reg [63:0] temp;
 integer i;
 always@(A or B)
@@ -22,7 +22,7 @@ always@(A or B)
 			end
 		end
 		
-		C = temp[31:0];
+		C = temp;
 		//remainder = temp[63:32]
 	end
 endmodule

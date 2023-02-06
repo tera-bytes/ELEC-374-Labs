@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for bus
-Mon Jan 30 13:21:54 2023
+Mon Feb 06 17:10:24 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -294,6 +294,71 @@ No synchronizer chains to report.
 ; MARin                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; IRin                    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; Yin                     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Zin                     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; R0out                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; R1out                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; R2out                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; R3out                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; R4out                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; R5out                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; R6out                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; R7out                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; R8out                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; R9out                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; R10out                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; R11out                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; R12out                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; R13out                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; R14out                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; R15out                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; HIout                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; LOout                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ZHIout                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ZLOout                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PCout                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; MDRout                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Inportout               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Cout                    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; IncPC                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; read                    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Mdatain[0]              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Mdatain[1]              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Mdatain[2]              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Mdatain[3]              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Mdatain[4]              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Mdatain[5]              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Mdatain[6]              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Mdatain[7]              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Mdatain[8]              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Mdatain[9]              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Mdatain[10]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Mdatain[11]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Mdatain[12]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Mdatain[13]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Mdatain[14]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Mdatain[15]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Mdatain[16]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Mdatain[17]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Mdatain[18]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Mdatain[19]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Mdatain[20]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Mdatain[21]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Mdatain[22]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Mdatain[23]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Mdatain[24]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Mdatain[25]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Mdatain[26]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Mdatain[27]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Mdatain[28]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Mdatain[29]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Mdatain[30]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Mdatain[31]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Zout                    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; operation[0]            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; operation[1]            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; operation[2]            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; operation[3]            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; operation[4]            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_ASDO_DATA1~     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_FLASH_nCE_nCSO~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_DATA0~          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
@@ -358,7 +423,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Mon Jan 30 13:21:53 2023
+    Info: Processing started: Mon Feb 06 17:10:23 2023
 Info: Command: quartus_sta bus -c bus
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -406,8 +471,8 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332101): Design is fully constrained for setup requirements
 Info (332101): Design is fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4608 megabytes
-    Info: Processing ended: Mon Jan 30 13:21:54 2023
+    Info: Peak virtual memory: 4623 megabytes
+    Info: Processing ended: Mon Feb 06 17:10:24 2023
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
