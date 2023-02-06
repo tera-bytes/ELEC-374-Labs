@@ -4,6 +4,6 @@ input [31:0] A;
 output reg [31:0] B;
 always@(A)
 	begin
-	B = ( not A ) + 1b'1;
+	B = ( !A ) + 1'b1;
 	end
 endmodule
