@@ -1,15 +1,15 @@
 `timescale 1ns/10ps
 module and_bus_tb;
 	reg PCout, Zlowout, MDRout, R2out, R3out;// add any other signals to see in your simulation
-	reg MARin, Zin, PCin, MDRin, IRin, Yin;
+	reg MARin, Zlowin, PCin, MDRin, IRin, Yin;
 	reg IncPC, read, R1in, R2in, R3in;
 	reg clock;
 	reg [4:0] operation;
 	reg [31:0] Mdatain;
-	reg [31:0] Muxout;
+	//wire [31:0] busPeek;
 
 	parameter	Default = 4'b0000, Reg_load1a = 4'b0001, Reg_load1b = 4'b0010, Reg_load2a = 4'b0011,
-					Reg_load2b = 4'b1000, Reg_load3a = 4'b0101, Reg_load3b = 4'b0110, T0 = 4'b0111,
+					Reg_load2b = 4'b0100, Reg_load3a = 4'b0101, Reg_load3b = 4'b0110, T0 = 4'b0111,
 					T1 = 4'b1000, T2 = 4'b1001, T3 = 4'b1010, T4 = 4'b1011, T5 = 4'b1100;
 	reg [3:0] Present_state = Default;
 
@@ -19,8 +19,8 @@ module and_bus_tb;
 	R4out, R5out, R6out, R7out, R8out, 
 	R9out, R10out, R11out, R12out, R13out, 
 	R14out, R15out, HIout, LOout, ZHIout, 
-	Zlowout, PCout, MDRout, Inportout, Cout, IncPC, read, Mdatain, PCout,
-	operation);
+	Zlowout, PCout, MDRout, Inportout, Cout, IncPC, read, Mdatain,
+	operation/*,busPeek*/);
 
 initial
 	begin
@@ -51,57 +51,63 @@ always@(Present_state)
 		case (Present_state) // assert the required signals in each clock cycle
 			Default: begin
 				PCout <= 0; Zlowout <= 0; MDRout <= 0; // initialize the signals
-				R2out <= 0; R3out <= 0; MARin <= 0; Zin <= 0;
+				R2out <= 0; R3out <= 0; MARin <= 0; Zlowin <= 0;
 				PCin <=0; MDRin <= 0; IRin <= 0; Yin <= 0;
-				IncPC <=0; read <= 0; operation <= 5'b00101;
+				IncPC <=0; read <= 0; operation <= 5'b00000;
 				R1in <=0; R2in<=0; R3in<=0; Mdatain <= 32'h00000000;
 			end
 			Reg_load1a: begin
 				Mdatain <= 32'h00000012;
 				read = 0; MDRin =0;
-				#10 read <= 1; MDRin <= 1;
+				#5 read <= 1; MDRin <= 1;
 				#15 read <= 0; MDRin <= 0;
 			end
 			Reg_load1b: begin
-				#10 MDRout <= 1; R2in <= 1;
+				#5 MDRout <= 1; R2in <= 1;
 				#15 MDRout <= 0; R2in <= 0; // initialize R2 with the value $12
 			end
 			Reg_load2a: begin
 				Mdatain <= 32'h00000014;
-				#10 read <=1; MDRin <=1;
+				#5 read <=1; MDRin <=1;
 				#15 read <= 0; MDRin <= 0;
 			end
 			 Reg_load2b: begin
-				#10 MDRout <= 1; R3in <= 1;
+				#5 MDRout <= 1; R3in <= 1;
 				#15 MDRout <= 0; R3in <= 0; // initialize R3 with the value $14
 			end
 			Reg_load3a: begin
 				Mdatain <= 32'h00000018;
-				#10 read <= 1; MDRin <= 1;
+				#5 read <= 1; MDRin <= 1;
 				#15 read <= 0; MDRin <= 0;
 			end
 			 Reg_load3b: begin
-				#10 MDRout <= 1; R1in <= 1;
+				#5 MDRout <= 1; R1in <= 1;
 				#15 MDRout <= 0; R1in <= 0; // initialize R1 with the value $18
 			end
 			T0: begin // see if you need to de-assert these signals
-				PCout <= 1; MARin <= 1; IncPC <= 1; Zin <= 1;
+				#5 PCout <= 1; MARin <= 1; IncPC <= 1; Zlowin <= 1;
+				#15 PCout <= 0; MARin <= 0; IncPC <= 0; Zlowin <= 0;
 			end
 			T1: begin
-				Zlowout <= 1; PCin <=1; read<=1; MDRin<=1;
-				Mdatain <= 32'h28918000;
+				Mdatain <= 32'h28918000; // OPCODE
+				#5 Zlowout <= 1; PCin <=1; read<=1; MDRin<=1;  
+				#15 Zlowout <= 0; PCin <=0; read<=0; MDRin<=0;
 			end
 			T2: begin
-				MDRout <= 1; IRin <=1;
+				# 5 MDRout <= 1; IRin <=1;
+				# 15 MDRout <= 0; IRin <=0;
 			end
 			T3: begin
-				R2out <= 1; Yin <= 1;
+				# 5 R2out <= 1; Yin <= 1;
+				# 15 R2out <= 0; Yin <= 0; // 12 into Y
 			end
 			T4: begin
-				R3out <= 1; operation <= 5'b00101; Zin <= 1; //"AND"
+				# 5 R3out <= 1; operation <= 5'b00101; Zlowin <= 1; //"AND" //R3 to muxout, direct to ALU
+				# 15 R3out <= 0; Zlowin <= 0;
 			end
 			T5: begin
-				Zlowout <= 1; R1in <= 1;
+				# 5 Zlowout <= 1; R1in <= 1; // result from alu (ZLOout) to R1
+				# 15 Zlowout <= 0; R1in <= 0; 
 			end
 		endcase
 	end

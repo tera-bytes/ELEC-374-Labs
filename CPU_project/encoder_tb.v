@@ -1,5 +1,5 @@
 `timescale 1ns/10ps
-module encoder_32_5_tb;
+module encoder_tb;
 
 // Input and Output signals
 reg R0out, R1out, R2out, R3out, R4out, R5out, R6out, R7out, R8out, R9out, R10out, R11out, R12out, R13out, R14out, R15out, HIout, LOout, ZHIout, ZLOout, PCout, MDRout, Inportout, Cout;
@@ -10,8 +10,8 @@ wire [4:0] out;
 // Test case
 initial 
 	begin
-  		R0out = 1'b1;
-  		R1out = 1'b0;
+  		R0out = 1'b0;
+  		R1out = 1'b1;
   		R2out = 1'b0;
   		R3out = 1'b0;
   		R4out = 1'b0;
@@ -56,6 +56,6 @@ initial
 
 	end
 // Instantiate the module under test
-encoder_32_5 test_encoder(R0out, R1out, R2out, R3out, R4out, R5out, R6out, R7out, R8out, R9out, R10out, R11out,
+encoder test_encoder(R0out, R1out, R2out, R3out, R4out, R5out, R6out, R7out, R8out, R9out, R10out, R11out,
  R12out, R13out, R14out, R15out, HIout, LOout, ZHIout, ZLOout, PCout, MDRout, Inportout, Cout, out);
 endmodule

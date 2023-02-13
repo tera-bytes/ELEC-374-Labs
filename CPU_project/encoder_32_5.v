@@ -9,6 +9,7 @@ input wire R0out, R1out, R2out, R3out,
 output reg [4:0] out
 );
 
+	
 wire [31:0] in = { 8'd0, Cout, Inportout, MDRout, PCout, ZLOout, ZHIout, LOout, HIout, R15out, R14out, R13out, R12out,
 					R11out, R10out, R9out, R8out, R7out, R6out, R5out, R4out, R3out, R2out, R1out, R0out};
 always@(*)begin
