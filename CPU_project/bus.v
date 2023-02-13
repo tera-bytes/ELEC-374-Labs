@@ -4,21 +4,21 @@ input wire clock, clear,
 
 input wire R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9in,
 	R10in, R11in, R12in, R13in, R14in, R15in, HIin, LOin, Zhighin, Zlowin,
-	PCin, MDRin, OutPortin, Cin, MARin, IRin, Yin, Zin,
+	PCin, MDRin, OutPortin, Cin, MARin, IRin, Yin, Zin, //register enables
 	
 input wire R0out, R1out, R2out, R3out, 
 	R4out, R5out, R6out, R7out, R8out, 
 	R9out, R10out, R11out, R12out, R13out, 
 	R14out, R15out, HIout, LOout, ZHIout, 
-	ZLOout, PCout, MDRout, Inportout, Cout,
+	ZLOout, PCout, MDRout, Inportout, Cout, //encoder inputs
 	
 input wire IncPC, read,
 
 input wire [31:0] Mdatain,
-
-input wire Zout,
 	
 input wire [4:0] operation
+
+//output reg [31:0] busPeek
 );
 
 	wire [31:0] busMuxIn_0R, busMuxIn_1R, busMuxIn_2R, busMuxIn_3R, 
@@ -27,14 +27,13 @@ input wire [4:0] operation
 		busMuxIn_14R, busMuxIn_15R, busMuxIn_HI, busMuxIn_LO, busMuxIn_ZHI, 
 		busMuxIn_ZLO, busMuxIn_PC, busMuxIn_MDR, busMuxIn_InPort, busMuxIn_C, Y_data_out;
 
-	wire [4:0] Muxread;
 	wire [31:0] Muxout;
 	wire [31:0] MDR_mux_out;
 	
 	wire [63:0] z_data_out;
 	
-	wire [31:0] encodein;
-	wire [4:0] encodeout;
+	//wire [31:0] encodein;
+	wire [4:0] encodeOut;
 	
 	mux_MDR MDRmux(Muxout, Mdatain, read, MDR_mux_out);
 
@@ -43,15 +42,14 @@ input wire [4:0] operation
 		busMuxIn_9R, busMuxIn_10R, busMuxIn_11R, busMuxIn_12R, busMuxIn_13R, 
 		busMuxIn_14R, busMuxIn_15R, busMuxIn_HI, busMuxIn_LO, busMuxIn_ZHI, 
 		busMuxIn_ZLO, busMuxIn_PC, busMuxIn_MDR, busMuxIn_InPort, busMuxIn_C, 
-		Muxread, Muxout);
+		encodeOut, Muxout);
 		
-	
 	
 	encoder_32_5 encoder (R0out, R1out, R2out, R3out, 
 	R4out, R5out, R6out, R7out, R8out, 
 	R9out, R10out, R11out, R12out, R13out, 
 	R14out, R15out, HIout, LOout, ZHIout, 
-	ZLOout, PCout, MDRout, Inportout, Cout, encodeout);
+	ZLOout, PCout, MDRout, Inportout, Cout, encodeOut);
 	
 	
 	register register0 (clock, clear, R0in, Muxout, busMuxIn_0R);
@@ -84,10 +82,13 @@ input wire [4:0] operation
 	register registerMAR (clock, clear, MARin, Muxout, MemIn);
 	
 	register registerY (clock, clear, Yin, Muxout, Y_data_out);
+		
+	alu this_alu(Y_data_out, Muxout, operation, z_data_out);
 	
-	assign Muxread = encodeout;
-	
-	alu this_alu(Muxout, Muxout, operation, z_data_out);
+
+//	always@(*) begin
+//		busPeek = Muxout;
+//	end
 	
 	
 endmodule
