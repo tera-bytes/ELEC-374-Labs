@@ -1,0 +1,67 @@
+|testBusMux_tb
+
+
+|testBusMux_tb|testBusMux:MUX
+busMuxIn_0R => Mux0.IN8
+busMuxIn_1R => Mux0.IN9
+busMuxIn_2R => Mux0.IN10
+busMuxIn_3R => Mux0.IN11
+busMuxIn_4R => Mux0.IN12
+busMuxIn_5R => Mux0.IN13
+busMuxIn_6R => Mux0.IN14
+busMuxIn_7R => Mux0.IN15
+busMuxIn_8R => Mux0.IN16
+busMuxIn_9R => Mux0.IN17
+busMuxIn_10R => Mux0.IN18
+busMuxIn_11R => Mux0.IN19
+busMuxIn_12R => Mux0.IN20
+busMuxIn_13R => Mux0.IN21
+busMuxIn_14R => Mux0.IN22
+busMuxIn_15R => Mux0.IN23
+busMuxIn_HI => Mux0.IN24
+busMuxIn_LO => Mux0.IN25
+busMuxIn_ZHI => Mux0.IN26
+busMuxIn_ZLO => Mux0.IN27
+busMuxIn_PC => Mux0.IN28
+busMuxIn_MDR => Mux0.IN29
+busMuxIn_InPort => Mux0.IN30
+busMuxIn_C => Mux0.IN31
+read[0] => Mux0.IN36
+read[1] => Mux0.IN35
+read[2] => Mux0.IN34
+read[3] => Mux0.IN33
+read[4] => Mux0.IN32
+out[0] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= <GND>
+out[2] <= <GND>
+out[3] <= <GND>
+out[4] <= <GND>
+out[5] <= <GND>
+out[6] <= <GND>
+out[7] <= <GND>
+out[8] <= <GND>
+out[9] <= <GND>
+out[10] <= <GND>
+out[11] <= <GND>
+out[12] <= <GND>
+out[13] <= <GND>
+out[14] <= <GND>
+out[15] <= <GND>
+out[16] <= <GND>
+out[17] <= <GND>
+out[18] <= <GND>
+out[19] <= <GND>
+out[20] <= <GND>
+out[21] <= <GND>
+out[22] <= <GND>
+out[23] <= <GND>
+out[24] <= <GND>
+out[25] <= <GND>
+out[26] <= <GND>
+out[27] <= <GND>
+out[28] <= <GND>
+out[29] <= <GND>
+out[30] <= <GND>
+out[31] <= <GND>
+
+

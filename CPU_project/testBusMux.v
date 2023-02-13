@@ -1,5 +1,5 @@
-module mux_32_1 (
-	input wire [31:0] busMuxIn_0R, busMuxIn_1R, busMuxIn_2R, busMuxIn_3R, 
+module testBusMux (
+	input wire busMuxIn_0R, busMuxIn_1R, busMuxIn_2R, busMuxIn_3R, 
 		busMuxIn_4R, busMuxIn_5R, busMuxIn_6R, busMuxIn_7R, busMuxIn_8R, 
 		busMuxIn_9R, busMuxIn_10R, busMuxIn_11R, busMuxIn_12R, busMuxIn_13R, 
 		busMuxIn_14R, busMuxIn_15R, busMuxIn_HI, busMuxIn_LO, busMuxIn_ZHI, 
@@ -10,7 +10,7 @@ module mux_32_1 (
 );
 
 always@(*)begin
-		case(read)
+	case(read)
 		0	:	out = busMuxIn_0R;
 		1	:	out = busMuxIn_1R;
 		2	:	out = busMuxIn_2R;
