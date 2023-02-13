@@ -1,0 +1,61 @@
+`timescale 1ns/10ps
+module encoder_32_5_tb;
+
+// Input and Output signals
+reg R0out, R1out, R2out, R3out, R4out, R5out, R6out, R7out, R8out, R9out, R10out, R11out, R12out, R13out, R14out, R15out, HIout, LOout, ZHIout, ZLOout, PCout, MDRout, Inportout, Cout;
+wire [4:0] out;
+
+
+
+// Test case
+initial 
+	begin
+  		R0out = 1'b1;
+  		R1out = 1'b0;
+  		R2out = 1'b0;
+  		R3out = 1'b0;
+  		R4out = 1'b0;
+  		R5out = 1'b0;
+  		R6out = 1'b0;
+  		R7out = 1'b0;
+  		R8out = 1'b0;
+  		R9out = 1'b0;
+  		R10out = 1'b0;
+  		R11out = 1'b0;
+  		R12out = 1'b0;
+  		R13out = 1'b0;
+  		R14out = 1'b0;
+  		R15out = 1'b0;
+  		HIout = 1'b0;
+  		LOout = 1'b0;
+  		ZHIout = 1'b0;
+  		ZLOout = 1'b0;
+  		PCout = 1'b0;
+  		MDRout = 1'b0;
+  		Inportout = 1'b0;
+  		Cout = 1'b0;
+  		
+		#10 R1out = 1'b0;
+			R2out = 1'b1;
+		#10 R2out = 1'b0;
+			R3out = 1'b1;
+		#10 R3out = 1'b0;
+			R4out = 1'b1;
+		#10 R4out = 1'b0;
+			R5out = 1'b1;
+		#10 R5out = 1'b0;
+			R6out = 1'b1;
+		#10 R6out = 1'b0;
+			R7out = 1'b1;
+		#10 R7out = 1'b0;
+			R8out = 1'b1;
+		#10 R8out = 1'b0;
+			R9out = 1'b1;
+		#10 R9out = 1'b0;
+			R10out = 1'b1;
+
+	end
+// Instantiate the module under test
+encoder_32_5 test_encoder(R0out, R1out, R2out, R3out, R4out, R5out, R6out, R7out, R8out, R9out, R10out, R11out,
+ R12out, R13out, R14out, R15out, HIout, LOout, ZHIout, ZLOout, PCout, MDRout, Inportout, Cout, out);
+endmodule
