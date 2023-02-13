@@ -3,43 +3,45 @@ K3
 13
 cModel Technology
 Z0 dC:\Users\olive\OneDrive\Documents\GitHub\ELEC-374-Labs\CPU_project\simulation\modelsim
-vregister
-IYYFjlGg:m3o:33n2db9HE1
-VX>d?CUQmo9J0=4OS=A5352
+vtestBusMux
+I6Lh:S1723EMScEelkUT@N0
+Vob23bZSM<L[_BGzDPWJ_>0
 Z1 dC:\Users\olive\OneDrive\Documents\GitHub\ELEC-374-Labs\CPU_project\simulation\modelsim
-w1675703094
-8C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/register.v
-FC:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/register.v
+w1676313965
+8C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/testBusMux.v
+FC:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/testBusMux.v
 L0 1
 Z2 OV;L;10.1d;51
 r1
 31
 Z3 o-vlog01compat -work work -O0
-!i10b 1
-!s100 <jinHjDX3fC]nOEMQWh?F3
-!s85 0
-!s108 1675721501.327000
-!s107 C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/register.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project|C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/register.v|
-!s101 -O0
+ntest@bus@mux
 Z4 !s92 -vlog01compat -work work +incdir+C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project -O0
-vregister_tb
 !i10b 1
-!s100 4H9>ZTV67mSBiY=A<Kd542
-IK:A`WH8>VIJW^]CJPd7>o2
-VPzo]z<>9V8[Ijo<]RZF=P0
+!s100 IS9dL9Z6MIf375_9VUFEn0
+!s85 0
+!s108 1676314007.369000
+!s107 C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/testBusMux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project|C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/testBusMux.v|
+!s101 -O0
+vtestBusMux_tb
+!i10b 1
+!s100 6SAUS>ii0kWn2GLCE=A413
+IR7R<7jiVKQA@ZJg3Z_@T81
+VSGZ;glAn=DTDWQb@5[]kT2
 R1
-w1675704383
-8C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/register_tb.v
-FC:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/register_tb.v
+w1676313480
+8C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/testBusMux_tb.v
+FC:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/testBusMux_tb.v
 L0 2
 R2
 r1
 !s85 0
 31
-!s108 1675721501.395000
-!s107 C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/register_tb.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project|C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/register_tb.v|
+!s108 1676314007.576000
+!s107 C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/testBusMux_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project|C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/testBusMux_tb.v|
 !s101 -O0
 R3
 R4
+ntest@bus@mux_tb
