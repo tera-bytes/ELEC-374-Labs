@@ -31,7 +31,6 @@ entity \bus\ is
         MARin           : in     vl_logic;
         IRin            : in     vl_logic;
         Yin             : in     vl_logic;
-        Zin             : in     vl_logic;
         R0out           : in     vl_logic;
         R1out           : in     vl_logic;
         R2out           : in     vl_logic;
@@ -59,7 +58,6 @@ entity \bus\ is
         IncPC           : in     vl_logic;
         read            : in     vl_logic;
         Mdatain         : in     vl_logic_vector(31 downto 0);
-        operation       : in     vl_logic_vector(4 downto 0);
-        busPeek         : out    vl_logic_vector(31 downto 0)
+        operation       : in     vl_logic_vector(4 downto 0)
     );
 end \bus\;

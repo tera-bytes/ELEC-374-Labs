@@ -1,5 +1,9 @@
 Assembler report for bus
-Mon Feb 13 16:17:29 2023
+<<<<<<< Updated upstream
+Mon Feb 06 17:10:22 2023
+=======
+Tue Feb 21 12:49:43 2023
+>>>>>>> Stashed changes
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -37,7 +41,11 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Feb 13 16:17:29 2023 ;
+<<<<<<< Updated upstream
+; Assembler Status      ; Successful - Mon Feb 06 17:10:22 2023 ;
+=======
+; Assembler Status      ; Successful - Tue Feb 21 12:49:43 2023 ;
+>>>>>>> Stashed changes
 ; Revision Name         ; bus                                   ;
 ; Top-level Entity Name ; bus                                   ;
 ; Family                ; Cyclone III                           ;
@@ -92,8 +100,13 @@ applicable agreement for further details.
 ; Option         ; Setting                                                                                          ;
 +----------------+--------------------------------------------------------------------------------------------------+
 ; Device         ; EP3C16F484C6                                                                                     ;
-; JTAG usercode  ; 0x000C812E                                                                                       ;
-; Checksum       ; 0x000C812E                                                                                       ;
+<<<<<<< Updated upstream
+; JTAG usercode  ; 0x000C6740                                                                                       ;
+; Checksum       ; 0x000C6740                                                                                       ;
+=======
+; JTAG usercode  ; 0x000C6768                                                                                       ;
+; Checksum       ; 0x000C6768                                                                                       ;
+>>>>>>> Stashed changes
 +----------------+--------------------------------------------------------------------------------------------------+
 
 
@@ -103,13 +116,21 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Mon Feb 13 16:17:28 2023
+<<<<<<< Updated upstream
+    Info: Processing started: Mon Feb 06 17:10:21 2023
+=======
+    Info: Processing started: Tue Feb 21 12:49:42 2023
+>>>>>>> Stashed changes
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off bus -c bus
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4571 megabytes
-    Info: Processing ended: Mon Feb 13 16:17:29 2023
+<<<<<<< Updated upstream
+    Info: Processing ended: Mon Feb 06 17:10:22 2023
+=======
+    Info: Processing ended: Tue Feb 21 12:49:43 2023
+>>>>>>> Stashed changes
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

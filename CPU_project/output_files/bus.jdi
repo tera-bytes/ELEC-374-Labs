@@ -1,6 +1,10 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="c6d11087d5fe3e28d820"/>
+<<<<<<< Updated upstream
+    <hash md5_digest_80b="773ff29c4c27a3589e51"/>
+=======
+    <hash md5_digest_80b="d7ecbe9d41f65d1ae81e"/>
+>>>>>>> Stashed changes
   </project>
   <file_info>
     <file device="EP3C16F484C6" path="bus.sof" usercode="0xFFFFFFFF"/>

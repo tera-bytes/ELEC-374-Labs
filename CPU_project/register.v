@@ -1,4 +1,4 @@
-module register #(parameter qInitial = 0)(
+module register #(parameter qInitial = 32'b0)(
 	input wire clock, 
 	input wire clear,
 	input wire enable,

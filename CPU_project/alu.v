@@ -96,8 +96,8 @@ rotateRight ror(Y, B, ror_out);
 rotateLeft rol(Y, B, rol_out);
 multiplier mul(Y, B, mul_out);
 divider div(Y, B, div_out);
-Negate neg(Y, neg_out);
-Not_32_bit nots(Y, not_out);
+Negate neg(B, neg_out);
+Not_32_bit nots(B, not_out);
 //...
 
 endmodule
