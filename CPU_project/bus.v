@@ -4,7 +4,11 @@ input wire clock, clear,
 
 input wire R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9in,
 	R10in, R11in, R12in, R13in, R14in, R15in, HIin, LOin, Zhighin, Zlowin,
+<<<<<<< Updated upstream
 	PCin, MDRin, OutPortin, Cin, MARin, IRin, Yin, Zin,
+=======
+	PCin, MDRin, OutPortin, Cin, MARin, IRin, Yin, //register enables
+>>>>>>> Stashed changes
 	
 input wire R0out, R1out, R2out, R3out, 
 	R4out, R5out, R6out, R7out, R8out, 
@@ -74,7 +78,9 @@ input wire [4:0] operation
 	register registerLO (clock, clear, LOin, Muxout, busMuxIn_LO);
 	register registerZHI (clock, clear, Zhighin, z_data_out[63:32], busMuxIn_ZHI);
 	register registerZLO (clock, clear, Zlowin, z_data_out[31:0], busMuxIn_ZLO);
-	register registerPC (clock, clear, PCin, Muxout, busMuxIn_PC);
+	
+	pc_32_bit registerPC (clock, clear, IncPC, PCin, Muxout, busMuxIn_PC);
+	
 	register registerMDR (clock, clear, MDRin, MDR_mux_out, busMuxIn_MDR);
 	register registerInPort (clock, clear, OutPortin, Muxout, busMuxIn_InPort);
 	register registerC (clock, clear, Cin, Muxout, busMuxIn_C);

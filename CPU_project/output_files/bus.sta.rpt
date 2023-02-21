@@ -1,5 +1,9 @@
 TimeQuest Timing Analyzer report for bus
+<<<<<<< Updated upstream
 Mon Feb 06 17:10:24 2023
+=======
+Tue Feb 21 12:49:46 2023
+>>>>>>> Stashed changes
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -294,7 +298,6 @@ No synchronizer chains to report.
 ; MARin                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; IRin                    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; Yin                     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; Zin                     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; R0out                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; R1out                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; R2out                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
@@ -423,7 +426,11 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+<<<<<<< Updated upstream
     Info: Processing started: Mon Feb 06 17:10:23 2023
+=======
+    Info: Processing started: Tue Feb 21 12:49:44 2023
+>>>>>>> Stashed changes
 Info: Command: quartus_sta bus -c bus
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -472,8 +479,13 @@ Info (332101): Design is fully constrained for setup requirements
 Info (332101): Design is fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 4623 megabytes
+<<<<<<< Updated upstream
     Info: Processing ended: Mon Feb 06 17:10:24 2023
     Info: Elapsed time: 00:00:01
+=======
+    Info: Processing ended: Tue Feb 21 12:49:46 2023
+    Info: Elapsed time: 00:00:02
+>>>>>>> Stashed changes
     Info: Total CPU time (on all processors): 00:00:01
 
 
