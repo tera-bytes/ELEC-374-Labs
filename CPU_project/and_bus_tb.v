@@ -23,7 +23,7 @@ bus BUS(clock, clear, R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9in
 	R9out, R10out, R11out, R12out, R13out, 
 	R14out, R15out, HIout, LOout, ZHIout, 
 	ZLOout, PCout, MDRout, Inportout, Cout, IncPC, read, Mdatain,
-	operation/*,busPeek*/);
+	operation);
 
 initial
 	begin
@@ -57,7 +57,7 @@ always@(Present_state)
 				PCout <= 0; ZLOout <= 0; MDRout <= 0; // initialize the signals
 				R2out <= 0; R3out <= 0; MARin <= 0; Zlowin <= 0;
 				PCin <=0; MDRin <= 0; IRin <= 0; Yin <= 0;
-				IncPC <=0; read <= 0; operation <= 5'b00101;
+				IncPC <=0; read <= 0; operation <= 5'b00000;
 				R1in <=0; R2in<=0; R3in<=0; Mdatain <= 32'h00000000;
 				{R0out, R1out, R2out, R3out, 
 					R4out, R5out, R6out, R7out, R8out, 
@@ -97,7 +97,7 @@ always@(Present_state)
 				#15 PCout <= 0; MARin <= 0; IncPC <= 0; Zlowin <= 0;
 			end
 			T1: begin
-				Mdatain <= 32'h28918000; // OPCODE
+				Mdatain <= 32'h28918000; // OPCODE 
 				#5 ZLOout <= 1; PCin <=1; read<=1; MDRin<=1;  
 				#15 ZLOout <= 0; PCin <=0; read<=0; MDRin<=0;
 			end

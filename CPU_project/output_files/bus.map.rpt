@@ -1,5 +1,5 @@
 Analysis & Synthesis report for bus
-Tue Feb 21 19:46:52 2023
+Wed Feb 22 15:51:35 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -73,7 +73,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Feb 21 19:46:52 2023      ;
+; Analysis & Synthesis Status        ; Successful - Wed Feb 22 15:51:34 2023      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; bus                                        ;
 ; Top-level Entity Name              ; bus                                        ;
@@ -592,7 +592,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Tue Feb 21 19:46:50 2023
+    Info: Processing started: Wed Feb 22 15:51:33 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off bus -c bus
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file mux_mdr.v
@@ -639,6 +639,30 @@ Info (12021): Found 1 design units, including 1 entities, in source file and_bus
     Info (12023): Found entity 1: and_bus_tb
 Info (12021): Found 1 design units, including 1 entities, in source file pc_32_bit.v
     Info (12023): Found entity 1: pc_32_bit
+Info (12021): Found 1 design units, including 1 entities, in source file or_bus_tb.v
+    Info (12023): Found entity 1: Or_bus_tb
+Info (12021): Found 1 design units, including 1 entities, in source file add_bus_tb.v
+    Info (12023): Found entity 1: add_bus_tb
+Info (12021): Found 1 design units, including 1 entities, in source file sub_bus_tb.v
+    Info (12023): Found entity 1: sub_bus_tb
+Info (12021): Found 1 design units, including 1 entities, in source file mul_bus_tb.v
+    Info (12023): Found entity 1: mul_bus_tb
+Info (12021): Found 1 design units, including 1 entities, in source file div_bus_tb.v
+    Info (12023): Found entity 1: div_bus_tb
+Info (12021): Found 1 design units, including 1 entities, in source file shr_bus_tb.v
+    Info (12023): Found entity 1: shr_bus_tb
+Info (12021): Found 1 design units, including 1 entities, in source file shra_bus_tb.v
+    Info (12023): Found entity 1: shra_bus_tb
+Info (12021): Found 1 design units, including 1 entities, in source file shl_bus_tb.v
+    Info (12023): Found entity 1: shl_bus_tb
+Info (12021): Found 1 design units, including 1 entities, in source file ror_bus_tb.v
+    Info (12023): Found entity 1: ror_bus_tb
+Info (12021): Found 1 design units, including 1 entities, in source file rol_bus_tb.v
+    Info (12023): Found entity 1: rol_bus_tb
+Info (12021): Found 1 design units, including 1 entities, in source file neg_bus_tb.v
+    Info (12023): Found entity 1: neg_bus_tb
+Info (12021): Found 1 design units, including 1 entities, in source file not_bus_tb.v
+    Info (12023): Found entity 1: not_bus_tb
 Warning (10236): Verilog HDL Implicit Net warning at bus.v(82): created implicit net for "controlIn"
 Warning (10236): Verilog HDL Implicit Net warning at bus.v(84): created implicit net for "MemIn"
 Warning (10236): Verilog HDL Implicit Net warning at bus_tb.v(21): created implicit net for "clear"
@@ -680,6 +704,234 @@ Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(20): created i
 Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(20): created implicit net for "Zhighin"
 Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(21): created implicit net for "OutPortin"
 Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(21): created implicit net for "Cin"
+Warning (10236): Verilog HDL Implicit Net warning at Or_bus_tb.v(19): created implicit net for "clear"
+Warning (10236): Verilog HDL Implicit Net warning at Or_bus_tb.v(19): created implicit net for "R0in"
+Warning (10236): Verilog HDL Implicit Net warning at Or_bus_tb.v(19): created implicit net for "R4in"
+Warning (10236): Verilog HDL Implicit Net warning at Or_bus_tb.v(19): created implicit net for "R5in"
+Warning (10236): Verilog HDL Implicit Net warning at Or_bus_tb.v(19): created implicit net for "R6in"
+Warning (10236): Verilog HDL Implicit Net warning at Or_bus_tb.v(19): created implicit net for "R7in"
+Warning (10236): Verilog HDL Implicit Net warning at Or_bus_tb.v(19): created implicit net for "R8in"
+Warning (10236): Verilog HDL Implicit Net warning at Or_bus_tb.v(19): created implicit net for "R9in"
+Warning (10236): Verilog HDL Implicit Net warning at Or_bus_tb.v(20): created implicit net for "R10in"
+Warning (10236): Verilog HDL Implicit Net warning at Or_bus_tb.v(20): created implicit net for "R11in"
+Warning (10236): Verilog HDL Implicit Net warning at Or_bus_tb.v(20): created implicit net for "R12in"
+Warning (10236): Verilog HDL Implicit Net warning at Or_bus_tb.v(20): created implicit net for "R13in"
+Warning (10236): Verilog HDL Implicit Net warning at Or_bus_tb.v(20): created implicit net for "R14in"
+Warning (10236): Verilog HDL Implicit Net warning at Or_bus_tb.v(20): created implicit net for "R15in"
+Warning (10236): Verilog HDL Implicit Net warning at Or_bus_tb.v(20): created implicit net for "HIin"
+Warning (10236): Verilog HDL Implicit Net warning at Or_bus_tb.v(20): created implicit net for "LOin"
+Warning (10236): Verilog HDL Implicit Net warning at Or_bus_tb.v(20): created implicit net for "Zhighin"
+Warning (10236): Verilog HDL Implicit Net warning at Or_bus_tb.v(21): created implicit net for "OutPortin"
+Warning (10236): Verilog HDL Implicit Net warning at Or_bus_tb.v(21): created implicit net for "Cin"
+Warning (10236): Verilog HDL Implicit Net warning at add_bus_tb.v(19): created implicit net for "clear"
+Warning (10236): Verilog HDL Implicit Net warning at add_bus_tb.v(19): created implicit net for "R1in"
+Warning (10236): Verilog HDL Implicit Net warning at add_bus_tb.v(19): created implicit net for "R2in"
+Warning (10236): Verilog HDL Implicit Net warning at add_bus_tb.v(19): created implicit net for "R3in"
+Warning (10236): Verilog HDL Implicit Net warning at add_bus_tb.v(19): created implicit net for "R6in"
+Warning (10236): Verilog HDL Implicit Net warning at add_bus_tb.v(19): created implicit net for "R7in"
+Warning (10236): Verilog HDL Implicit Net warning at add_bus_tb.v(19): created implicit net for "R8in"
+Warning (10236): Verilog HDL Implicit Net warning at add_bus_tb.v(19): created implicit net for "R9in"
+Warning (10236): Verilog HDL Implicit Net warning at add_bus_tb.v(20): created implicit net for "R10in"
+Warning (10236): Verilog HDL Implicit Net warning at add_bus_tb.v(20): created implicit net for "R11in"
+Warning (10236): Verilog HDL Implicit Net warning at add_bus_tb.v(20): created implicit net for "R12in"
+Warning (10236): Verilog HDL Implicit Net warning at add_bus_tb.v(20): created implicit net for "R13in"
+Warning (10236): Verilog HDL Implicit Net warning at add_bus_tb.v(20): created implicit net for "R14in"
+Warning (10236): Verilog HDL Implicit Net warning at add_bus_tb.v(20): created implicit net for "R15in"
+Warning (10236): Verilog HDL Implicit Net warning at add_bus_tb.v(20): created implicit net for "HIin"
+Warning (10236): Verilog HDL Implicit Net warning at add_bus_tb.v(20): created implicit net for "LOin"
+Warning (10236): Verilog HDL Implicit Net warning at add_bus_tb.v(20): created implicit net for "Zhighin"
+Warning (10236): Verilog HDL Implicit Net warning at add_bus_tb.v(21): created implicit net for "OutPortin"
+Warning (10236): Verilog HDL Implicit Net warning at add_bus_tb.v(21): created implicit net for "Cin"
+Warning (10236): Verilog HDL Implicit Net warning at sub_bus_tb.v(19): created implicit net for "clear"
+Warning (10236): Verilog HDL Implicit Net warning at sub_bus_tb.v(19): created implicit net for "R1in"
+Warning (10236): Verilog HDL Implicit Net warning at sub_bus_tb.v(19): created implicit net for "R2in"
+Warning (10236): Verilog HDL Implicit Net warning at sub_bus_tb.v(19): created implicit net for "R3in"
+Warning (10236): Verilog HDL Implicit Net warning at sub_bus_tb.v(19): created implicit net for "R6in"
+Warning (10236): Verilog HDL Implicit Net warning at sub_bus_tb.v(19): created implicit net for "R7in"
+Warning (10236): Verilog HDL Implicit Net warning at sub_bus_tb.v(19): created implicit net for "R8in"
+Warning (10236): Verilog HDL Implicit Net warning at sub_bus_tb.v(19): created implicit net for "R9in"
+Warning (10236): Verilog HDL Implicit Net warning at sub_bus_tb.v(20): created implicit net for "R10in"
+Warning (10236): Verilog HDL Implicit Net warning at sub_bus_tb.v(20): created implicit net for "R11in"
+Warning (10236): Verilog HDL Implicit Net warning at sub_bus_tb.v(20): created implicit net for "R12in"
+Warning (10236): Verilog HDL Implicit Net warning at sub_bus_tb.v(20): created implicit net for "R13in"
+Warning (10236): Verilog HDL Implicit Net warning at sub_bus_tb.v(20): created implicit net for "R14in"
+Warning (10236): Verilog HDL Implicit Net warning at sub_bus_tb.v(20): created implicit net for "R15in"
+Warning (10236): Verilog HDL Implicit Net warning at sub_bus_tb.v(20): created implicit net for "HIin"
+Warning (10236): Verilog HDL Implicit Net warning at sub_bus_tb.v(20): created implicit net for "LOin"
+Warning (10236): Verilog HDL Implicit Net warning at sub_bus_tb.v(20): created implicit net for "Zhighin"
+Warning (10236): Verilog HDL Implicit Net warning at sub_bus_tb.v(21): created implicit net for "OutPortin"
+Warning (10236): Verilog HDL Implicit Net warning at sub_bus_tb.v(21): created implicit net for "Cin"
+Warning (10236): Verilog HDL Implicit Net warning at mul_bus_tb.v(19): created implicit net for "clear"
+Warning (10236): Verilog HDL Implicit Net warning at mul_bus_tb.v(19): created implicit net for "R0in"
+Warning (10236): Verilog HDL Implicit Net warning at mul_bus_tb.v(19): created implicit net for "R1in"
+Warning (10236): Verilog HDL Implicit Net warning at mul_bus_tb.v(19): created implicit net for "R2in"
+Warning (10236): Verilog HDL Implicit Net warning at mul_bus_tb.v(19): created implicit net for "R3in"
+Warning (10236): Verilog HDL Implicit Net warning at mul_bus_tb.v(19): created implicit net for "R4in"
+Warning (10236): Verilog HDL Implicit Net warning at mul_bus_tb.v(19): created implicit net for "R5in"
+Warning (10236): Verilog HDL Implicit Net warning at mul_bus_tb.v(19): created implicit net for "R8in"
+Warning (10236): Verilog HDL Implicit Net warning at mul_bus_tb.v(19): created implicit net for "R9in"
+Warning (10236): Verilog HDL Implicit Net warning at mul_bus_tb.v(20): created implicit net for "R10in"
+Warning (10236): Verilog HDL Implicit Net warning at mul_bus_tb.v(20): created implicit net for "R11in"
+Warning (10236): Verilog HDL Implicit Net warning at mul_bus_tb.v(20): created implicit net for "R12in"
+Warning (10236): Verilog HDL Implicit Net warning at mul_bus_tb.v(20): created implicit net for "R13in"
+Warning (10236): Verilog HDL Implicit Net warning at mul_bus_tb.v(20): created implicit net for "R14in"
+Warning (10236): Verilog HDL Implicit Net warning at mul_bus_tb.v(20): created implicit net for "R15in"
+Warning (10236): Verilog HDL Implicit Net warning at mul_bus_tb.v(21): created implicit net for "OutPortin"
+Warning (10236): Verilog HDL Implicit Net warning at mul_bus_tb.v(21): created implicit net for "Cin"
+Warning (10236): Verilog HDL Implicit Net warning at div_bus_tb.v(19): created implicit net for "clear"
+Warning (10236): Verilog HDL Implicit Net warning at div_bus_tb.v(19): created implicit net for "R0in"
+Warning (10236): Verilog HDL Implicit Net warning at div_bus_tb.v(19): created implicit net for "R1in"
+Warning (10236): Verilog HDL Implicit Net warning at div_bus_tb.v(19): created implicit net for "R2in"
+Warning (10236): Verilog HDL Implicit Net warning at div_bus_tb.v(19): created implicit net for "R3in"
+Warning (10236): Verilog HDL Implicit Net warning at div_bus_tb.v(19): created implicit net for "R4in"
+Warning (10236): Verilog HDL Implicit Net warning at div_bus_tb.v(19): created implicit net for "R5in"
+Warning (10236): Verilog HDL Implicit Net warning at div_bus_tb.v(19): created implicit net for "R8in"
+Warning (10236): Verilog HDL Implicit Net warning at div_bus_tb.v(19): created implicit net for "R9in"
+Warning (10236): Verilog HDL Implicit Net warning at div_bus_tb.v(20): created implicit net for "R10in"
+Warning (10236): Verilog HDL Implicit Net warning at div_bus_tb.v(20): created implicit net for "R11in"
+Warning (10236): Verilog HDL Implicit Net warning at div_bus_tb.v(20): created implicit net for "R12in"
+Warning (10236): Verilog HDL Implicit Net warning at div_bus_tb.v(20): created implicit net for "R13in"
+Warning (10236): Verilog HDL Implicit Net warning at div_bus_tb.v(20): created implicit net for "R14in"
+Warning (10236): Verilog HDL Implicit Net warning at div_bus_tb.v(20): created implicit net for "R15in"
+Warning (10236): Verilog HDL Implicit Net warning at div_bus_tb.v(21): created implicit net for "OutPortin"
+Warning (10236): Verilog HDL Implicit Net warning at div_bus_tb.v(21): created implicit net for "Cin"
+Warning (10236): Verilog HDL Implicit Net warning at shr_bus_tb.v(19): created implicit net for "clear"
+Warning (10236): Verilog HDL Implicit Net warning at shr_bus_tb.v(19): created implicit net for "R0in"
+Warning (10236): Verilog HDL Implicit Net warning at shr_bus_tb.v(19): created implicit net for "R2in"
+Warning (10236): Verilog HDL Implicit Net warning at shr_bus_tb.v(19): created implicit net for "R4in"
+Warning (10236): Verilog HDL Implicit Net warning at shr_bus_tb.v(19): created implicit net for "R6in"
+Warning (10236): Verilog HDL Implicit Net warning at shr_bus_tb.v(19): created implicit net for "R7in"
+Warning (10236): Verilog HDL Implicit Net warning at shr_bus_tb.v(19): created implicit net for "R8in"
+Warning (10236): Verilog HDL Implicit Net warning at shr_bus_tb.v(19): created implicit net for "R9in"
+Warning (10236): Verilog HDL Implicit Net warning at shr_bus_tb.v(20): created implicit net for "R10in"
+Warning (10236): Verilog HDL Implicit Net warning at shr_bus_tb.v(20): created implicit net for "R11in"
+Warning (10236): Verilog HDL Implicit Net warning at shr_bus_tb.v(20): created implicit net for "R12in"
+Warning (10236): Verilog HDL Implicit Net warning at shr_bus_tb.v(20): created implicit net for "R13in"
+Warning (10236): Verilog HDL Implicit Net warning at shr_bus_tb.v(20): created implicit net for "R14in"
+Warning (10236): Verilog HDL Implicit Net warning at shr_bus_tb.v(20): created implicit net for "R15in"
+Warning (10236): Verilog HDL Implicit Net warning at shr_bus_tb.v(20): created implicit net for "HIin"
+Warning (10236): Verilog HDL Implicit Net warning at shr_bus_tb.v(20): created implicit net for "LOin"
+Warning (10236): Verilog HDL Implicit Net warning at shr_bus_tb.v(20): created implicit net for "Zhighin"
+Warning (10236): Verilog HDL Implicit Net warning at shr_bus_tb.v(21): created implicit net for "OutPortin"
+Warning (10236): Verilog HDL Implicit Net warning at shr_bus_tb.v(21): created implicit net for "Cin"
+Warning (10236): Verilog HDL Implicit Net warning at shra_bus_tb.v(19): created implicit net for "clear"
+Warning (10236): Verilog HDL Implicit Net warning at shra_bus_tb.v(19): created implicit net for "R0in"
+Warning (10236): Verilog HDL Implicit Net warning at shra_bus_tb.v(19): created implicit net for "R2in"
+Warning (10236): Verilog HDL Implicit Net warning at shra_bus_tb.v(19): created implicit net for "R4in"
+Warning (10236): Verilog HDL Implicit Net warning at shra_bus_tb.v(19): created implicit net for "R6in"
+Warning (10236): Verilog HDL Implicit Net warning at shra_bus_tb.v(19): created implicit net for "R7in"
+Warning (10236): Verilog HDL Implicit Net warning at shra_bus_tb.v(19): created implicit net for "R8in"
+Warning (10236): Verilog HDL Implicit Net warning at shra_bus_tb.v(19): created implicit net for "R9in"
+Warning (10236): Verilog HDL Implicit Net warning at shra_bus_tb.v(20): created implicit net for "R10in"
+Warning (10236): Verilog HDL Implicit Net warning at shra_bus_tb.v(20): created implicit net for "R11in"
+Warning (10236): Verilog HDL Implicit Net warning at shra_bus_tb.v(20): created implicit net for "R12in"
+Warning (10236): Verilog HDL Implicit Net warning at shra_bus_tb.v(20): created implicit net for "R13in"
+Warning (10236): Verilog HDL Implicit Net warning at shra_bus_tb.v(20): created implicit net for "R14in"
+Warning (10236): Verilog HDL Implicit Net warning at shra_bus_tb.v(20): created implicit net for "R15in"
+Warning (10236): Verilog HDL Implicit Net warning at shra_bus_tb.v(20): created implicit net for "HIin"
+Warning (10236): Verilog HDL Implicit Net warning at shra_bus_tb.v(20): created implicit net for "LOin"
+Warning (10236): Verilog HDL Implicit Net warning at shra_bus_tb.v(20): created implicit net for "Zhighin"
+Warning (10236): Verilog HDL Implicit Net warning at shra_bus_tb.v(21): created implicit net for "OutPortin"
+Warning (10236): Verilog HDL Implicit Net warning at shra_bus_tb.v(21): created implicit net for "Cin"
+Warning (10236): Verilog HDL Implicit Net warning at shl_bus_tb.v(19): created implicit net for "clear"
+Warning (10236): Verilog HDL Implicit Net warning at shl_bus_tb.v(19): created implicit net for "R0in"
+Warning (10236): Verilog HDL Implicit Net warning at shl_bus_tb.v(19): created implicit net for "R2in"
+Warning (10236): Verilog HDL Implicit Net warning at shl_bus_tb.v(19): created implicit net for "R4in"
+Warning (10236): Verilog HDL Implicit Net warning at shl_bus_tb.v(19): created implicit net for "R6in"
+Warning (10236): Verilog HDL Implicit Net warning at shl_bus_tb.v(19): created implicit net for "R7in"
+Warning (10236): Verilog HDL Implicit Net warning at shl_bus_tb.v(19): created implicit net for "R8in"
+Warning (10236): Verilog HDL Implicit Net warning at shl_bus_tb.v(19): created implicit net for "R9in"
+Warning (10236): Verilog HDL Implicit Net warning at shl_bus_tb.v(20): created implicit net for "R10in"
+Warning (10236): Verilog HDL Implicit Net warning at shl_bus_tb.v(20): created implicit net for "R11in"
+Warning (10236): Verilog HDL Implicit Net warning at shl_bus_tb.v(20): created implicit net for "R12in"
+Warning (10236): Verilog HDL Implicit Net warning at shl_bus_tb.v(20): created implicit net for "R13in"
+Warning (10236): Verilog HDL Implicit Net warning at shl_bus_tb.v(20): created implicit net for "R14in"
+Warning (10236): Verilog HDL Implicit Net warning at shl_bus_tb.v(20): created implicit net for "R15in"
+Warning (10236): Verilog HDL Implicit Net warning at shl_bus_tb.v(20): created implicit net for "HIin"
+Warning (10236): Verilog HDL Implicit Net warning at shl_bus_tb.v(20): created implicit net for "LOin"
+Warning (10236): Verilog HDL Implicit Net warning at shl_bus_tb.v(20): created implicit net for "Zhighin"
+Warning (10236): Verilog HDL Implicit Net warning at shl_bus_tb.v(21): created implicit net for "OutPortin"
+Warning (10236): Verilog HDL Implicit Net warning at shl_bus_tb.v(21): created implicit net for "Cin"
+Warning (10236): Verilog HDL Implicit Net warning at ror_bus_tb.v(19): created implicit net for "clear"
+Warning (10236): Verilog HDL Implicit Net warning at ror_bus_tb.v(19): created implicit net for "R0in"
+Warning (10236): Verilog HDL Implicit Net warning at ror_bus_tb.v(19): created implicit net for "R1in"
+Warning (10236): Verilog HDL Implicit Net warning at ror_bus_tb.v(19): created implicit net for "R2in"
+Warning (10236): Verilog HDL Implicit Net warning at ror_bus_tb.v(19): created implicit net for "R3in"
+Warning (10236): Verilog HDL Implicit Net warning at ror_bus_tb.v(19): created implicit net for "R5in"
+Warning (10236): Verilog HDL Implicit Net warning at ror_bus_tb.v(19): created implicit net for "R7in"
+Warning (10236): Verilog HDL Implicit Net warning at ror_bus_tb.v(19): created implicit net for "R8in"
+Warning (10236): Verilog HDL Implicit Net warning at ror_bus_tb.v(19): created implicit net for "R9in"
+Warning (10236): Verilog HDL Implicit Net warning at ror_bus_tb.v(20): created implicit net for "R10in"
+Warning (10236): Verilog HDL Implicit Net warning at ror_bus_tb.v(20): created implicit net for "R11in"
+Warning (10236): Verilog HDL Implicit Net warning at ror_bus_tb.v(20): created implicit net for "R12in"
+Warning (10236): Verilog HDL Implicit Net warning at ror_bus_tb.v(20): created implicit net for "R13in"
+Warning (10236): Verilog HDL Implicit Net warning at ror_bus_tb.v(20): created implicit net for "R14in"
+Warning (10236): Verilog HDL Implicit Net warning at ror_bus_tb.v(20): created implicit net for "R15in"
+Warning (10236): Verilog HDL Implicit Net warning at ror_bus_tb.v(20): created implicit net for "HIin"
+Warning (10236): Verilog HDL Implicit Net warning at ror_bus_tb.v(20): created implicit net for "LOin"
+Warning (10236): Verilog HDL Implicit Net warning at ror_bus_tb.v(20): created implicit net for "Zhighin"
+Warning (10236): Verilog HDL Implicit Net warning at ror_bus_tb.v(21): created implicit net for "OutPortin"
+Warning (10236): Verilog HDL Implicit Net warning at ror_bus_tb.v(21): created implicit net for "Cin"
+Warning (10236): Verilog HDL Implicit Net warning at rol_bus_tb.v(19): created implicit net for "clear"
+Warning (10236): Verilog HDL Implicit Net warning at rol_bus_tb.v(19): created implicit net for "R0in"
+Warning (10236): Verilog HDL Implicit Net warning at rol_bus_tb.v(19): created implicit net for "R1in"
+Warning (10236): Verilog HDL Implicit Net warning at rol_bus_tb.v(19): created implicit net for "R2in"
+Warning (10236): Verilog HDL Implicit Net warning at rol_bus_tb.v(19): created implicit net for "R3in"
+Warning (10236): Verilog HDL Implicit Net warning at rol_bus_tb.v(19): created implicit net for "R5in"
+Warning (10236): Verilog HDL Implicit Net warning at rol_bus_tb.v(19): created implicit net for "R7in"
+Warning (10236): Verilog HDL Implicit Net warning at rol_bus_tb.v(19): created implicit net for "R8in"
+Warning (10236): Verilog HDL Implicit Net warning at rol_bus_tb.v(19): created implicit net for "R9in"
+Warning (10236): Verilog HDL Implicit Net warning at rol_bus_tb.v(20): created implicit net for "R10in"
+Warning (10236): Verilog HDL Implicit Net warning at rol_bus_tb.v(20): created implicit net for "R11in"
+Warning (10236): Verilog HDL Implicit Net warning at rol_bus_tb.v(20): created implicit net for "R12in"
+Warning (10236): Verilog HDL Implicit Net warning at rol_bus_tb.v(20): created implicit net for "R13in"
+Warning (10236): Verilog HDL Implicit Net warning at rol_bus_tb.v(20): created implicit net for "R14in"
+Warning (10236): Verilog HDL Implicit Net warning at rol_bus_tb.v(20): created implicit net for "R15in"
+Warning (10236): Verilog HDL Implicit Net warning at rol_bus_tb.v(20): created implicit net for "HIin"
+Warning (10236): Verilog HDL Implicit Net warning at rol_bus_tb.v(20): created implicit net for "LOin"
+Warning (10236): Verilog HDL Implicit Net warning at rol_bus_tb.v(20): created implicit net for "Zhighin"
+Warning (10236): Verilog HDL Implicit Net warning at rol_bus_tb.v(21): created implicit net for "OutPortin"
+Warning (10236): Verilog HDL Implicit Net warning at rol_bus_tb.v(21): created implicit net for "Cin"
+Warning (10236): Verilog HDL Implicit Net warning at neg_bus_tb.v(19): created implicit net for "clear"
+Warning (10236): Verilog HDL Implicit Net warning at neg_bus_tb.v(19): created implicit net for "R2in"
+Warning (10236): Verilog HDL Implicit Net warning at neg_bus_tb.v(19): created implicit net for "R3in"
+Warning (10236): Verilog HDL Implicit Net warning at neg_bus_tb.v(19): created implicit net for "R4in"
+Warning (10236): Verilog HDL Implicit Net warning at neg_bus_tb.v(19): created implicit net for "R5in"
+Warning (10236): Verilog HDL Implicit Net warning at neg_bus_tb.v(19): created implicit net for "R6in"
+Warning (10236): Verilog HDL Implicit Net warning at neg_bus_tb.v(19): created implicit net for "R7in"
+Warning (10236): Verilog HDL Implicit Net warning at neg_bus_tb.v(19): created implicit net for "R8in"
+Warning (10236): Verilog HDL Implicit Net warning at neg_bus_tb.v(19): created implicit net for "R9in"
+Warning (10236): Verilog HDL Implicit Net warning at neg_bus_tb.v(20): created implicit net for "R10in"
+Warning (10236): Verilog HDL Implicit Net warning at neg_bus_tb.v(20): created implicit net for "R11in"
+Warning (10236): Verilog HDL Implicit Net warning at neg_bus_tb.v(20): created implicit net for "R12in"
+Warning (10236): Verilog HDL Implicit Net warning at neg_bus_tb.v(20): created implicit net for "R13in"
+Warning (10236): Verilog HDL Implicit Net warning at neg_bus_tb.v(20): created implicit net for "R14in"
+Warning (10236): Verilog HDL Implicit Net warning at neg_bus_tb.v(20): created implicit net for "R15in"
+Warning (10236): Verilog HDL Implicit Net warning at neg_bus_tb.v(20): created implicit net for "HIin"
+Warning (10236): Verilog HDL Implicit Net warning at neg_bus_tb.v(20): created implicit net for "LOin"
+Warning (10236): Verilog HDL Implicit Net warning at neg_bus_tb.v(20): created implicit net for "Zhighin"
+Warning (10236): Verilog HDL Implicit Net warning at neg_bus_tb.v(21): created implicit net for "OutPortin"
+Warning (10236): Verilog HDL Implicit Net warning at neg_bus_tb.v(21): created implicit net for "Cin"
+Warning (10236): Verilog HDL Implicit Net warning at not_bus_tb.v(19): created implicit net for "clear"
+Warning (10236): Verilog HDL Implicit Net warning at not_bus_tb.v(19): created implicit net for "R2in"
+Warning (10236): Verilog HDL Implicit Net warning at not_bus_tb.v(19): created implicit net for "R3in"
+Warning (10236): Verilog HDL Implicit Net warning at not_bus_tb.v(19): created implicit net for "R4in"
+Warning (10236): Verilog HDL Implicit Net warning at not_bus_tb.v(19): created implicit net for "R5in"
+Warning (10236): Verilog HDL Implicit Net warning at not_bus_tb.v(19): created implicit net for "R6in"
+Warning (10236): Verilog HDL Implicit Net warning at not_bus_tb.v(19): created implicit net for "R7in"
+Warning (10236): Verilog HDL Implicit Net warning at not_bus_tb.v(19): created implicit net for "R8in"
+Warning (10236): Verilog HDL Implicit Net warning at not_bus_tb.v(19): created implicit net for "R9in"
+Warning (10236): Verilog HDL Implicit Net warning at not_bus_tb.v(20): created implicit net for "R10in"
+Warning (10236): Verilog HDL Implicit Net warning at not_bus_tb.v(20): created implicit net for "R11in"
+Warning (10236): Verilog HDL Implicit Net warning at not_bus_tb.v(20): created implicit net for "R12in"
+Warning (10236): Verilog HDL Implicit Net warning at not_bus_tb.v(20): created implicit net for "R13in"
+Warning (10236): Verilog HDL Implicit Net warning at not_bus_tb.v(20): created implicit net for "R14in"
+Warning (10236): Verilog HDL Implicit Net warning at not_bus_tb.v(20): created implicit net for "R15in"
+Warning (10236): Verilog HDL Implicit Net warning at not_bus_tb.v(20): created implicit net for "HIin"
+Warning (10236): Verilog HDL Implicit Net warning at not_bus_tb.v(20): created implicit net for "LOin"
+Warning (10236): Verilog HDL Implicit Net warning at not_bus_tb.v(20): created implicit net for "Zhighin"
+Warning (10236): Verilog HDL Implicit Net warning at not_bus_tb.v(21): created implicit net for "OutPortin"
+Warning (10236): Verilog HDL Implicit Net warning at not_bus_tb.v(21): created implicit net for "Cin"
 Info (12127): Elaborating entity "bus" for the top level hierarchy
 Info (12128): Elaborating entity "mux_MDR" for hierarchy "mux_MDR:MDRmux"
 Warning (10240): Verilog HDL Always Construct warning at mux_MDR.v(10): inferring latch(es) for variable "out", which holds its previous value in one or more paths through the always construct
@@ -758,7 +1010,6 @@ Info (10041): Inferred latch for "q[30]" at register.v(16)
 Info (10041): Inferred latch for "q[31]" at register.v(16)
 Info (12128): Elaborating entity "pc_32_bit" for hierarchy "pc_32_bit:registerPC"
 Warning (10235): Verilog HDL Always Construct warning at pc_32_bit.v(14): variable "clear" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at pc_32_bit.v(17): variable "enable" is read inside the Always Construct but isn't in the Always Construct's Event Control
 Warning (10235): Verilog HDL Always Construct warning at pc_32_bit.v(17): variable "IncPC" is read inside the Always Construct but isn't in the Always Construct's Event Control
 Warning (10235): Verilog HDL Always Construct warning at pc_32_bit.v(18): variable "q" is read inside the Always Construct but isn't in the Always Construct's Event Control
 Warning (10235): Verilog HDL Always Construct warning at pc_32_bit.v(20): variable "enable" is read inside the Always Construct but isn't in the Always Construct's Event Control
@@ -912,11 +1163,11 @@ Warning (21074): Design contains 92 input pin(s) that do not drive logic
 Info (21057): Implemented 92 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 92 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 152 warnings
-    Info: Peak virtual memory: 4632 megabytes
-    Info: Processing ended: Tue Feb 21 19:46:52 2023
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 379 warnings
+    Info: Peak virtual memory: 4635 megabytes
+    Info: Processing ended: Wed Feb 22 15:51:35 2023
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
 
 
 +------------------------------------------+

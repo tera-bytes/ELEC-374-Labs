@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for bus
-Tue Feb 21 19:47:03 2023
+Wed Feb 22 15:51:49 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -421,7 +421,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Tue Feb 21 19:47:01 2023
+    Info: Processing started: Wed Feb 22 15:51:47 2023
 Info: Command: quartus_sta bus -c bus
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -470,8 +470,8 @@ Info (332101): Design is fully constrained for setup requirements
 Info (332101): Design is fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 4623 megabytes
-    Info: Processing ended: Tue Feb 21 19:47:03 2023
+    Info: Processing ended: Wed Feb 22 15:51:49 2023
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
 
 

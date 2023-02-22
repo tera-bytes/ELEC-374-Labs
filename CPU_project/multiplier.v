@@ -8,14 +8,14 @@ always@(A or B)
 	begin
 	C = 64'b0;
 	Bsign_ext = {B[31], B[31:0], 1'b0};
-	for(i=0; i<31; i=i+1) begin 
-		case(Bsign_ext[i +: 3])
-			{1'b0, 1'b0, 1'b1} : C = C + (A << i);
-			{1'b0, 1'b1, 1'b0} : C = C + (A << i);
-			{1'b0, 1'b1, 1'b1} : C = C + (A << (i+1));
-			{1'b1, 1'b0, 1'b0} : C = C - (A << (i+1));
-			{1'b1, 1'b0, 1'b1} : C = C - (A << i);
-			{1'b1, 1'b1, 1'b0} : C = C - (A << i);
+	for(i=0; i<31; i=i+2) begin // need to skip every second for pair recoding
+		case(Bsign_ext[i +: 3]) // take i+2, i+1, i
+			{1'b0, 1'b0, 1'b1} : C = C + (A << (i)); //1 
+			{1'b0, 1'b1, 1'b0} : C = C + (A << (i)); //1
+			{1'b0, 1'b1, 1'b1} : C = C + (A << ((i)+1)); //2
+			{1'b1, 1'b0, 1'b0} : C = C - (A << ((i)+1)); //-2
+			{1'b1, 1'b0, 1'b1} : C = C - (A << (i)); //-1
+			{1'b1, 1'b1, 1'b0} : C = C - (A << (i)); //-2
 			default : C = C;
 		endcase
 	end
