@@ -1,9 +1,5 @@
 Analysis & Synthesis report for bus
-<<<<<<< Updated upstream
-Mon Feb 06 17:10:14 2023
-=======
-Tue Feb 21 12:49:35 2023
->>>>>>> Stashed changes
+Tue Feb 21 19:46:52 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -38,11 +34,7 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
  26. Parameter Settings for User Entity Instance: register:registerLO
  27. Parameter Settings for User Entity Instance: register:registerZHI
  28. Parameter Settings for User Entity Instance: register:registerZLO
-<<<<<<< Updated upstream
- 29. Parameter Settings for User Entity Instance: register:registerPC
-=======
  29. Parameter Settings for User Entity Instance: pc_32_bit:registerPC
->>>>>>> Stashed changes
  30. Parameter Settings for User Entity Instance: register:registerMDR
  31. Parameter Settings for User Entity Instance: register:registerInPort
  32. Parameter Settings for User Entity Instance: register:registerC
@@ -51,20 +43,11 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
  35. Parameter Settings for User Entity Instance: register:registerY
  36. Port Connectivity Checks: "alu:this_alu|adder:subs"
  37. Port Connectivity Checks: "alu:this_alu|adder:adds"
-<<<<<<< Updated upstream
- 38. Port Connectivity Checks: "register:registerY"
- 39. Port Connectivity Checks: "register:registerMAR"
- 40. Port Connectivity Checks: "register:registerIR"
- 41. Elapsed Time Per Partition
- 42. Analysis & Synthesis Messages
- 43. Analysis & Synthesis Suppressed Messages
-=======
  38. Port Connectivity Checks: "register:registerMAR"
  39. Port Connectivity Checks: "register:registerIR"
  40. Elapsed Time Per Partition
  41. Analysis & Synthesis Messages
  42. Analysis & Synthesis Suppressed Messages
->>>>>>> Stashed changes
 
 
 
@@ -90,11 +73,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-<<<<<<< Updated upstream
-; Analysis & Synthesis Status        ; Successful - Mon Feb 06 17:10:14 2023      ;
-=======
-; Analysis & Synthesis Status        ; Successful - Tue Feb 21 12:49:35 2023      ;
->>>>>>> Stashed changes
+; Analysis & Synthesis Status        ; Successful - Tue Feb 21 19:46:52 2023      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; bus                                        ;
 ; Top-level Entity Name              ; bus                                        ;
@@ -103,11 +82,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 0                                          ;
 ;     Dedicated logic registers      ; 0                                          ;
 ; Total registers                    ; 0                                          ;
-<<<<<<< Updated upstream
-; Total pins                         ; 94                                         ;
-=======
 ; Total pins                         ; 92                                         ;
->>>>>>> Stashed changes
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -236,10 +211,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Not_32_bit.v                     ; yes             ; User Verilog HDL File  ; C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/Not_32_bit.v           ;         ;
 ; Or_32_bit.v                      ; yes             ; User Verilog HDL File  ; C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/Or_32_bit.v            ;         ;
 ; And_32_bit.v                     ; yes             ; User Verilog HDL File  ; C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/And_32_bit.v           ;         ;
-<<<<<<< Updated upstream
-=======
 ; pc_32_bit.v                      ; yes             ; User Verilog HDL File  ; C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/pc_32_bit.v            ;         ;
->>>>>>> Stashed changes
 +----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------+---------+
 
 
@@ -263,19 +235,11 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;     -- Dedicated logic registers            ; 0     ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-<<<<<<< Updated upstream
-; I/O pins                                    ; 94    ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-; Maximum fan-out node                        ; clock ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 94    ;
-=======
 ; I/O pins                                    ; 92    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; clock ;
 ; Maximum fan-out                             ; 1     ;
 ; Total fan-out                               ; 92    ;
->>>>>>> Stashed changes
 ; Average fan-out                             ; 0.50  ;
 +---------------------------------------------+-------+
 
@@ -285,11 +249,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-<<<<<<< Updated upstream
-; |bus                       ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 94   ; 0            ; |bus                ; work         ;
-=======
 ; |bus                       ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 92   ; 0            ; |bus                ; work         ;
->>>>>>> Stashed changes
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -309,225 +269,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-<<<<<<< Updated upstream
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: register:register0 ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; qInitial       ; 0     ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: register:register1 ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; qInitial       ; 0     ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: register:register2 ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; qInitial       ; 0     ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: register:register3 ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; qInitial       ; 0     ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: register:register4 ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; qInitial       ; 0     ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: register:register5 ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; qInitial       ; 0     ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: register:register6 ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; qInitial       ; 0     ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: register:register7 ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; qInitial       ; 0     ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: register:register8 ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; qInitial       ; 0     ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: register:register9 ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; qInitial       ; 0     ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: register:register10 ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; qInitial       ; 0     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: register:register11 ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; qInitial       ; 0     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: register:register12 ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; qInitial       ; 0     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: register:register13 ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; qInitial       ; 0     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: register:register14 ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; qInitial       ; 0     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: register:register15 ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; qInitial       ; 0     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: register:registerHI ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; qInitial       ; 0     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: register:registerLO ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; qInitial       ; 0     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: register:registerZHI ;
-+----------------+-------+------------------------------------------+
-; Parameter Name ; Value ; Type                                     ;
-+----------------+-------+------------------------------------------+
-; qInitial       ; 0     ; Signed Integer                           ;
-+----------------+-------+------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: register:registerZLO ;
-+----------------+-------+------------------------------------------+
-; Parameter Name ; Value ; Type                                     ;
-+----------------+-------+------------------------------------------+
-; qInitial       ; 0     ; Signed Integer                           ;
-+----------------+-------+------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: register:registerPC ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; qInitial       ; 0     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: register:registerMDR ;
-+----------------+-------+------------------------------------------+
-; Parameter Name ; Value ; Type                                     ;
-+----------------+-------+------------------------------------------+
-; qInitial       ; 0     ; Signed Integer                           ;
-+----------------+-------+------------------------------------------+
-=======
 +---------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: register:register0     ;
 +----------------+----------------------------------+-----------------+
@@ -745,59 +486,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+----------------------------------+-----------------+
 ; qInitial       ; 00000000000000000000000000000000 ; Unsigned Binary ;
 +----------------+----------------------------------+-----------------+
->>>>>>> Stashed changes
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +----------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: register:registerInPort ;
-<<<<<<< Updated upstream
-+----------------+-------+---------------------------------------------+
-; Parameter Name ; Value ; Type                                        ;
-+----------------+-------+---------------------------------------------+
-; qInitial       ; 0     ; Signed Integer                              ;
-+----------------+-------+---------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: register:registerC ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; qInitial       ; 0     ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: register:registerIR ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; qInitial       ; 0     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: register:registerMAR ;
-+----------------+-------+------------------------------------------+
-; Parameter Name ; Value ; Type                                     ;
-+----------------+-------+------------------------------------------+
-; qInitial       ; 0     ; Signed Integer                           ;
-+----------------+-------+------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: register:registerY ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; qInitial       ; 0     ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
-=======
 +----------------+----------------------------------+------------------+
 ; Parameter Name ; Value                            ; Type             ;
 +----------------+----------------------------------+------------------+
@@ -843,7 +536,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+----------------------------------+-----------------+
 ; qInitial       ; 00000000000000000000000000000000 ; Unsigned Binary ;
 +----------------+----------------------------------+-----------------+
->>>>>>> Stashed changes
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -865,18 +557,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+-------+----------+-------------------------+
 
 
-<<<<<<< Updated upstream
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "register:registerY"                                                                 ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-=======
->>>>>>> Stashed changes
 +---------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "register:registerMAR"                                                                                                  ;
 +------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
@@ -912,11 +592,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-<<<<<<< Updated upstream
-    Info: Processing started: Mon Feb 06 17:10:13 2023
-=======
-    Info: Processing started: Tue Feb 21 12:49:34 2023
->>>>>>> Stashed changes
+    Info: Processing started: Tue Feb 21 19:46:50 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off bus -c bus
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file mux_mdr.v
@@ -961,49 +637,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file bus_tb.
     Info (12023): Found entity 1: bus_tb
 Info (12021): Found 1 design units, including 1 entities, in source file and_bus_tb.v
     Info (12023): Found entity 1: and_bus_tb
-<<<<<<< Updated upstream
-Warning (10236): Verilog HDL Implicit Net warning at bus.v(82): created implicit net for "controlIn"
-Warning (10236): Verilog HDL Implicit Net warning at bus.v(84): created implicit net for "MemIn"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(16): created implicit net for "clear"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(16): created implicit net for "R0in"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(16): created implicit net for "R4in"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(16): created implicit net for "R5in"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(16): created implicit net for "R6in"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(16): created implicit net for "R7in"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(16): created implicit net for "R8in"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(16): created implicit net for "R9in"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(17): created implicit net for "R10in"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(17): created implicit net for "R11in"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(17): created implicit net for "R12in"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(17): created implicit net for "R13in"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(17): created implicit net for "R14in"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(17): created implicit net for "R15in"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(17): created implicit net for "HIin"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(17): created implicit net for "LOin"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(17): created implicit net for "Zhighin"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(17): created implicit net for "Zlowin"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(18): created implicit net for "OutPortin"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(18): created implicit net for "Cin"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(18): created implicit net for "R0out"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(18): created implicit net for "R1out"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(19): created implicit net for "R4out"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(19): created implicit net for "R5out"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(19): created implicit net for "R6out"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(19): created implicit net for "R7out"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(19): created implicit net for "R8out"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(20): created implicit net for "R9out"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(20): created implicit net for "R10out"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(20): created implicit net for "R11out"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(20): created implicit net for "R12out"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(20): created implicit net for "R13out"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(21): created implicit net for "R14out"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(21): created implicit net for "R15out"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(21): created implicit net for "HIout"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(21): created implicit net for "LOout"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(21): created implicit net for "ZHIout"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(22): created implicit net for "Inportout"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(22): created implicit net for "Cout"
-=======
 Info (12021): Found 1 design units, including 1 entities, in source file pc_32_bit.v
     Info (12023): Found entity 1: pc_32_bit
 Warning (10236): Verilog HDL Implicit Net warning at bus.v(82): created implicit net for "controlIn"
@@ -1028,26 +661,25 @@ Warning (10236): Verilog HDL Implicit Net warning at bus_tb.v(22): created impli
 Warning (10236): Verilog HDL Implicit Net warning at bus_tb.v(23): created implicit net for "OutPortin"
 Warning (10236): Verilog HDL Implicit Net warning at bus_tb.v(23): created implicit net for "Cin"
 Warning (10236): Verilog HDL Implicit Net warning at bus_tb.v(23): created implicit net for "Zin"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(20): created implicit net for "clear"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(20): created implicit net for "R0in"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(20): created implicit net for "R4in"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(20): created implicit net for "R5in"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(20): created implicit net for "R6in"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(20): created implicit net for "R7in"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(20): created implicit net for "R8in"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(20): created implicit net for "R9in"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(21): created implicit net for "R10in"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(21): created implicit net for "R11in"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(21): created implicit net for "R12in"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(21): created implicit net for "R13in"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(21): created implicit net for "R14in"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(21): created implicit net for "R15in"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(21): created implicit net for "HIin"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(21): created implicit net for "LOin"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(21): created implicit net for "Zhighin"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(22): created implicit net for "OutPortin"
-Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(22): created implicit net for "Cin"
->>>>>>> Stashed changes
+Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(19): created implicit net for "clear"
+Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(19): created implicit net for "R0in"
+Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(19): created implicit net for "R4in"
+Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(19): created implicit net for "R5in"
+Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(19): created implicit net for "R6in"
+Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(19): created implicit net for "R7in"
+Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(19): created implicit net for "R8in"
+Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(19): created implicit net for "R9in"
+Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(20): created implicit net for "R10in"
+Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(20): created implicit net for "R11in"
+Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(20): created implicit net for "R12in"
+Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(20): created implicit net for "R13in"
+Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(20): created implicit net for "R14in"
+Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(20): created implicit net for "R15in"
+Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(20): created implicit net for "HIin"
+Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(20): created implicit net for "LOin"
+Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(20): created implicit net for "Zhighin"
+Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(21): created implicit net for "OutPortin"
+Warning (10236): Verilog HDL Implicit Net warning at and_bus_tb.v(21): created implicit net for "Cin"
 Info (12127): Elaborating entity "bus" for the top level hierarchy
 Info (12128): Elaborating entity "mux_MDR" for hierarchy "mux_MDR:MDRmux"
 Warning (10240): Verilog HDL Always Construct warning at mux_MDR.v(10): inferring latch(es) for variable "out", which holds its previous value in one or more paths through the always construct
@@ -1085,16 +717,8 @@ Info (10041): Inferred latch for "out[30]" at mux_MDR.v(10)
 Info (10041): Inferred latch for "out[31]" at mux_MDR.v(10)
 Info (12128): Elaborating entity "mux_32_1" for hierarchy "mux_32_1:mux"
 Info (12128): Elaborating entity "encoder_32_5" for hierarchy "encoder_32_5:encoder"
-<<<<<<< Updated upstream
 Warning (10762): Verilog HDL Case Statement warning at encoder_32_5.v(15): can't check case statement for completeness because the case expression has too many possible states
 Info (10264): Verilog HDL Case Statement information at encoder_32_5.v(15): all case item expressions in this case statement are onehot
-Info (12128): Elaborating entity "register" for hierarchy "register:register0"
-Info (12128): Elaborating entity "alu" for hierarchy "alu:this_alu"
-Info (12128): Elaborating entity "adder" for hierarchy "alu:this_alu|adder:adds"
-Warning (10034): Output port "C[31..8]" at adder.v(7) has no driver
-=======
-Warning (10762): Verilog HDL Case Statement warning at encoder_32_5.v(17): can't check case statement for completeness because the case expression has too many possible states
-Info (10264): Verilog HDL Case Statement information at encoder_32_5.v(17): all case item expressions in this case statement are onehot
 Info (12128): Elaborating entity "register" for hierarchy "register:register0"
 Warning (10235): Verilog HDL Always Construct warning at register.v(13): variable "clear" is read inside the Always Construct but isn't in the Always Construct's Event Control
 Warning (10235): Verilog HDL Always Construct warning at register.v(16): variable "enable" is read inside the Always Construct but isn't in the Always Construct's Event Control
@@ -1174,7 +798,6 @@ Info (10041): Inferred latch for "q[30]" at pc_32_bit.v(17)
 Info (10041): Inferred latch for "q[31]" at pc_32_bit.v(17)
 Info (12128): Elaborating entity "alu" for hierarchy "alu:this_alu"
 Info (12128): Elaborating entity "adder" for hierarchy "alu:this_alu|adder:adds"
->>>>>>> Stashed changes
 Info (12128): Elaborating entity "And_32_bit" for hierarchy "alu:this_alu|And_32_bit:ands"
 Info (12128): Elaborating entity "Or_32_bit" for hierarchy "alu:this_alu|Or_32_bit:ors"
 Info (12128): Elaborating entity "shiftRight" for hierarchy "alu:this_alu|shiftRight:shr"
@@ -1183,12 +806,9 @@ Info (12128): Elaborating entity "shiftRightArithmetic" for hierarchy "alu:this_
 Info (12128): Elaborating entity "rotateRight" for hierarchy "alu:this_alu|rotateRight:ror"
 Info (12128): Elaborating entity "rotateLeft" for hierarchy "alu:this_alu|rotateLeft:rol"
 Info (12128): Elaborating entity "multiplier" for hierarchy "alu:this_alu|multiplier:mul"
-<<<<<<< Updated upstream
 Warning (10199): Verilog HDL Case Statement warning at multiplier.v(13): case item expression never matches the case expression
 Warning (10199): Verilog HDL Case Statement warning at multiplier.v(15): case item expression never matches the case expression
 Warning (10199): Verilog HDL Case Statement warning at multiplier.v(17): case item expression never matches the case expression
-=======
->>>>>>> Stashed changes
 Info (12128): Elaborating entity "divider" for hierarchy "alu:this_alu|divider:div"
 Info (12128): Elaborating entity "Negate" for hierarchy "alu:this_alu|Negate:neg"
 Info (12128): Elaborating entity "Not_32_bit" for hierarchy "alu:this_alu|Not_32_bit:nots"
@@ -1196,11 +816,7 @@ Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity
 Info (144001): Generated suppressed messages file C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/output_files/bus.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-<<<<<<< Updated upstream
-Warning (21074): Design contains 94 input pin(s) that do not drive logic
-=======
 Warning (21074): Design contains 92 input pin(s) that do not drive logic
->>>>>>> Stashed changes
     Warning (15610): No output dependent on input pin "clock"
     Warning (15610): No output dependent on input pin "clear"
     Warning (15610): No output dependent on input pin "R0in"
@@ -1230,10 +846,6 @@ Warning (21074): Design contains 92 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "MARin"
     Warning (15610): No output dependent on input pin "IRin"
     Warning (15610): No output dependent on input pin "Yin"
-<<<<<<< Updated upstream
-    Warning (15610): No output dependent on input pin "Zin"
-=======
->>>>>>> Stashed changes
     Warning (15610): No output dependent on input pin "R0out"
     Warning (15610): No output dependent on input pin "R1out"
     Warning (15610): No output dependent on input pin "R2out"
@@ -1292,34 +904,19 @@ Warning (21074): Design contains 92 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "Mdatain[29]"
     Warning (15610): No output dependent on input pin "Mdatain[30]"
     Warning (15610): No output dependent on input pin "Mdatain[31]"
-<<<<<<< Updated upstream
-    Warning (15610): No output dependent on input pin "Zout"
-=======
->>>>>>> Stashed changes
     Warning (15610): No output dependent on input pin "operation[0]"
     Warning (15610): No output dependent on input pin "operation[1]"
     Warning (15610): No output dependent on input pin "operation[2]"
     Warning (15610): No output dependent on input pin "operation[3]"
     Warning (15610): No output dependent on input pin "operation[4]"
-<<<<<<< Updated upstream
-Info (21057): Implemented 94 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 94 input pins
-    Info (21059): Implemented 0 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 144 warnings
-    Info: Peak virtual memory: 4637 megabytes
-    Info: Processing ended: Mon Feb 06 17:10:14 2023
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
-=======
 Info (21057): Implemented 92 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 92 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 149 warnings
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 152 warnings
     Info: Peak virtual memory: 4632 megabytes
-    Info: Processing ended: Tue Feb 21 12:49:35 2023
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:02
->>>>>>> Stashed changes
+    Info: Processing ended: Tue Feb 21 19:46:52 2023
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 
 +------------------------------------------+
