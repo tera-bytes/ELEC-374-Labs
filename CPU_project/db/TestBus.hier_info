@@ -48,7 +48,7 @@ busMuxIn_MDR => busMuxIn_MDR.IN1
 busMuxIn_InPort => busMuxIn_InPort.IN1
 busMuxIn_C => busMuxIn_C.IN1
 Y_data_out => ~NO_FANOUT~
-Muxout <= mux_32_1:mux.port25
+Muxout << mux_32_1:mux.port25
 
 
 |TestBus|mux_32_1:mux

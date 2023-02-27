@@ -72,7 +72,7 @@ always@(Present_state)
 			end
 			Reg_load1b: begin
 				#5 MDRout <= 1; R3in <= 1;
-				#15 MDRout <= 0; R3in <= 0; // initialize R2 with the value $12 (18)
+				#15 MDRout <= 0; R3in <= 0; // initialize R3 with the value $12 (18)
 			end
 			Reg_load2a: begin
 				Mdatain <= 32'h00000014;
@@ -81,7 +81,7 @@ always@(Present_state)
 			end
 			 Reg_load2b: begin
 				#5 MDRout <= 1; R5in <= 1;
-				#15 MDRout <= 0; R5in <= 0; // initialize R3 with the value $14 (20)
+				#15 MDRout <= 0; R5in <= 0; // initialize R5 with the value $14 (20)
 			end
 			Reg_load3a: begin
 				Mdatain <= 32'h00000018;
@@ -107,10 +107,10 @@ always@(Present_state)
 			end
 			T3: begin
 				# 5 R3out <= 1; Yin <= 1;
-				# 15 R3out <= 0; Yin <= 0; // R2 into Y
+				# 15 R3out <= 0; Yin <= 0; // R3 into Y
 			end
 			T4: begin
-				# 5 R5out <= 1; operation <= 5'b00111; Zlowin <= 1; //"AND" //R3 to muxout, direct to ALU
+				# 5 R5out <= 1; operation <= 5'b00111; Zlowin <= 1; //"SHR" //R5 to muxout, direct to ALU
 				# 15 R5out <= 0; Zlowin <= 0;
 			end
 			T5: begin

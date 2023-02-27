@@ -1,9 +1,10 @@
 module mux_MDR(
-	input wire [31:0] busMuxOut,
-	input wire [31:0] mDataIn,
+// 2-1 multiplexer for the MDR unit
+	input wire [31:0] busMuxOut, // standard bus out
+	input wire [31:0] mDataIn, // Data from memory
 	
 	input wire read,
-	output reg [31:0] out
+	output reg [31:0] out // output to standard 32-bit register mdr
 );
 
 always@(*)begin

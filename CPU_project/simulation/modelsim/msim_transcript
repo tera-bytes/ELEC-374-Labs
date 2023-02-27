@@ -1,5 +1,4 @@
 # Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
-# ERROR: No extended dataflow license exists
 # do bus_run_msim_rtl_verilog.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -126,16 +125,16 @@
 # Top level modules:
 # 	pc_32_bit
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project {C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/not_bus_tb.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project {C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/shra_bus_tb.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module not_bus_tb
+# -- Compiling module shra_bus_tb
 # 
 # Top level modules:
-# 	not_bus_tb
+# 	shra_bus_tb
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs="+acc"  not_bus_tb
-# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps not_bus_tb 
-# Loading work.not_bus_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs="+acc"  shra_bus_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps shra_bus_tb 
+# Loading work.shra_bus_tb
 # Loading work.bus
 # Loading work.mux_MDR
 # Loading work.mux_32_1
@@ -155,12 +154,12 @@
 # Loading work.divider
 # Loading work.Negate
 # Loading work.Not_32_bit
-# ** Warning: (vsim-3015) C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/bus.v(82): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'q'. The port definition is at: C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/register.v(6).
+# ** Warning: (vsim-3015) C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/bus.v(83): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'q'. The port definition is at: C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/register.v(6).
 # 
-#         Region: /not_bus_tb/BUS/registerIR
-# ** Warning: (vsim-3015) C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/bus.v(84): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'q'. The port definition is at: C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/register.v(6).
+#         Region: /shra_bus_tb/BUS/registerIR
+# ** Warning: (vsim-3015) C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/bus.v(85): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'q'. The port definition is at: C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/register.v(6).
 # 
-#         Region: /not_bus_tb/BUS/registerMAR
+#         Region: /shra_bus_tb/BUS/registerMAR
 # 
 # add wave *
 # view structure

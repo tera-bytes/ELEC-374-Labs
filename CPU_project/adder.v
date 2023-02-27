@@ -1,9 +1,8 @@
-//Ripple Carryv Adder
-
+//Ripple carry adder and subtractor
 `timescale 1ns/10ps
 module adder(A, B, C, select);
 input [31:0] A, B;
-input wire select;
+input wire select; //select add or subtract
 output reg [31:0] C;
 reg [32:0] localCarry;
 reg [31:0] temp;
@@ -12,7 +11,7 @@ always@(A or B or select)
 	begin
 	
 	if (select == 1) begin
-		temp = ~B + 1'b1;
+		temp = ~B + 1'b1; //2's compliment
 	end else begin
 		temp = B;
 	end

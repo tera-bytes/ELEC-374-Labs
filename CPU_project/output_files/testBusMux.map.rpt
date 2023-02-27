@@ -1,5 +1,5 @@
-Analysis & Elaboration report for testBusMux
-Mon Feb 13 13:46:25 2023
+Analysis & Synthesis report for testBusMux
+Fri Feb 24 13:48:07 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -7,11 +7,16 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Analysis & Elaboration Settings
-  5. Port Connectivity Checks: "testBusMux:MUX"
-  6. Analysis & Elaboration Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Elapsed Time Per Partition
+ 10. Analysis & Synthesis Messages
+ 11. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -35,43 +40,32 @@ applicable agreement for further details.
 
 
 +---------------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                                  ;
+; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Mon Feb 13 13:46:25 2023      ;
+; Analysis & Synthesis Status        ; Successful - Fri Feb 24 13:48:07 2023      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; testBusMux                                 ;
-; Top-level Entity Name              ; testBusMux_tb                              ;
+; Top-level Entity Name              ; testBusMux                                 ;
 ; Family                             ; Cyclone III                                ;
-; Total logic elements               ; N/A until Partition Merge                  ;
-;     Total combinational functions  ; N/A until Partition Merge                  ;
-;     Dedicated logic registers      ; N/A until Partition Merge                  ;
-; Total registers                    ; N/A until Partition Merge                  ;
-; Total pins                         ; N/A until Partition Merge                  ;
-; Total virtual pins                 ; N/A until Partition Merge                  ;
-; Total memory bits                  ; N/A until Partition Merge                  ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                  ;
-; Total PLLs                         ; N/A until Partition Merge                  ;
+; Total logic elements               ; 16                                         ;
+;     Total combinational functions  ; 16                                         ;
+;     Dedicated logic registers      ; 0                                          ;
+; Total registers                    ; 0                                          ;
+; Total pins                         ; 61                                         ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
 +------------------------------------+--------------------------------------------+
-
-
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 8      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                      ;
+; Analysis & Synthesis Settings                                                                                        ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP3C16F484C6       ;                    ;
-; Top-level entity name                                                      ; testBusMux_tb      ; testBusMux         ;
+; Top-level entity name                                                      ; testBusMux         ; testBusMux         ;
 ; Family name                                                                ; Cyclone III        ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -152,34 +146,154 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "testBusMux:MUX"                                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; out  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                  ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                    ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------+---------+
+; testBusMux.v                     ; yes             ; User Verilog HDL File  ; C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/testBusMux.v ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                 ;
++---------------------------------------------+---------------+
+; Resource                                    ; Usage         ;
++---------------------------------------------+---------------+
+; Estimated Total logic elements              ; 16            ;
+;                                             ;               ;
+; Total combinational functions               ; 16            ;
+; Logic element usage by number of LUT inputs ;               ;
+;     -- 4 input functions                    ; 15            ;
+;     -- 3 input functions                    ; 1             ;
+;     -- <=2 input functions                  ; 0             ;
+;                                             ;               ;
+; Logic elements by mode                      ;               ;
+;     -- normal mode                          ; 16            ;
+;     -- arithmetic mode                      ; 0             ;
+;                                             ;               ;
+; Total registers                             ; 0             ;
+;     -- Dedicated logic registers            ; 0             ;
+;     -- I/O registers                        ; 0             ;
+;                                             ;               ;
+; I/O pins                                    ; 61            ;
+; Embedded Multiplier 9-bit elements          ; 0             ;
+; Maximum fan-out node                        ; read[2]~input ;
+; Maximum fan-out                             ; 7             ;
+; Total fan-out                               ; 125           ;
+; Average fan-out                             ; 0.91          ;
++---------------------------------------------+---------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; |testBusMux                ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 61   ; 0            ; |testBusMux         ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Analysis & Elaboration
+Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Mon Feb 13 13:46:23 2023
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off testBusMux -c testBusMux --analysis_and_elaboration
+    Info: Processing started: Fri Feb 24 13:48:06 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off testBusMux -c testBusMux
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file testbusmux.v
     Info (12023): Found entity 1: testBusMux
 Info (12021): Found 1 design units, including 1 entities, in source file testbusmux_tb.v
     Info (12023): Found entity 1: testBusMux_tb
-Info (12127): Elaborating entity "testBusMux_tb" for the top level hierarchy
-Info (12128): Elaborating entity "testBusMux" for hierarchy "testBusMux:MUX"
-Info: Quartus II 64-Bit Analysis & Elaboration was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4599 megabytes
-    Info: Processing ended: Mon Feb 13 13:46:25 2023
-    Info: Elapsed time: 00:00:02
+Info (12127): Elaborating entity "testBusMux" for the top level hierarchy
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "out[1]" is stuck at GND
+    Warning (13410): Pin "out[2]" is stuck at GND
+    Warning (13410): Pin "out[3]" is stuck at GND
+    Warning (13410): Pin "out[4]" is stuck at GND
+    Warning (13410): Pin "out[5]" is stuck at GND
+    Warning (13410): Pin "out[6]" is stuck at GND
+    Warning (13410): Pin "out[7]" is stuck at GND
+    Warning (13410): Pin "out[8]" is stuck at GND
+    Warning (13410): Pin "out[9]" is stuck at GND
+    Warning (13410): Pin "out[10]" is stuck at GND
+    Warning (13410): Pin "out[11]" is stuck at GND
+    Warning (13410): Pin "out[12]" is stuck at GND
+    Warning (13410): Pin "out[13]" is stuck at GND
+    Warning (13410): Pin "out[14]" is stuck at GND
+    Warning (13410): Pin "out[15]" is stuck at GND
+    Warning (13410): Pin "out[16]" is stuck at GND
+    Warning (13410): Pin "out[17]" is stuck at GND
+    Warning (13410): Pin "out[18]" is stuck at GND
+    Warning (13410): Pin "out[19]" is stuck at GND
+    Warning (13410): Pin "out[20]" is stuck at GND
+    Warning (13410): Pin "out[21]" is stuck at GND
+    Warning (13410): Pin "out[22]" is stuck at GND
+    Warning (13410): Pin "out[23]" is stuck at GND
+    Warning (13410): Pin "out[24]" is stuck at GND
+    Warning (13410): Pin "out[25]" is stuck at GND
+    Warning (13410): Pin "out[26]" is stuck at GND
+    Warning (13410): Pin "out[27]" is stuck at GND
+    Warning (13410): Pin "out[28]" is stuck at GND
+    Warning (13410): Pin "out[29]" is stuck at GND
+    Warning (13410): Pin "out[30]" is stuck at GND
+    Warning (13410): Pin "out[31]" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/output_files/testBusMux.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 77 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 29 input pins
+    Info (21059): Implemented 32 output pins
+    Info (21061): Implemented 16 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 33 warnings
+    Info: Peak virtual memory: 4620 megabytes
+    Info: Processing ended: Fri Feb 24 13:48:07 2023
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/output_files/testBusMux.map.smsg.
 
 

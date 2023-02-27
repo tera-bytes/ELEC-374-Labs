@@ -12,6 +12,7 @@ input wire R0out, R1out, R2out, R3out,
 	R9out, R10out, R11out, R12out, R13out, 
 	R14out, R15out, HIout, LOout, ZHIout, 
 	ZLOout, PCout, MDRout, Inportout, Cout,
+	//Controls register outputs, encoder inputs
 	
 input wire IncPC, read,
 

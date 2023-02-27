@@ -1,5 +1,5 @@
 Analysis & Elaboration report for encoder
-Mon Feb 13 14:50:57 2023
+Fri Feb 24 13:59:13 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                  ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Mon Feb 13 14:50:57 2023      ;
+; Analysis & Elaboration Status      ; Successful - Fri Feb 24 13:59:13 2023      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; encoder                                    ;
 ; Top-level Entity Name              ; encoder_tb                                 ;
@@ -168,7 +168,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Elaboration
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Mon Feb 13 14:50:57 2023
+    Info: Processing started: Fri Feb 24 13:59:13 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off encoder -c encoder --analysis_and_elaboration
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file encoder_tb.v
@@ -182,7 +182,7 @@ Info (10264): Verilog HDL Case Statement information at encoder.v(15): all case 
 Info (144001): Generated suppressed messages file C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/output_files/encoder.map.smsg
 Info: Quartus II 64-Bit Analysis & Elaboration was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 4599 megabytes
-    Info: Processing ended: Mon Feb 13 14:50:57 2023
+    Info: Processing ended: Fri Feb 24 13:59:13 2023
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

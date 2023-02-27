@@ -1,3 +1,4 @@
+//32-5 bit encoder for the bidirectional bus
 module encoder_32_5 (
 input wire R0out, R1out, R2out, R3out, 
 	R4out, R5out, R6out, R7out, R8out, 

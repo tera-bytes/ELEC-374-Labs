@@ -4,7 +4,7 @@ input [31:0] A, B;
 output reg [31:0] C;
 always@(A or B)
 	begin
-	
+	//Case statement arranges bits 1 of 32 ways
 	case(B%32)
 		31 : C = {A[0], A[31:1]};
 		30 : C = {A[1:0], A[31:2]};

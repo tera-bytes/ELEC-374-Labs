@@ -1,3 +1,4 @@
+//64-bit register, currently unused
 module reg_64_bit #(parameter qInitial = 0)(
 	input wire clock, 
 	input wire clear,

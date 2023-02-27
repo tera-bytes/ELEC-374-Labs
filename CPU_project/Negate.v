@@ -4,6 +4,6 @@ input [31:0] A;
 output reg [31:0] B;
 always@(A)
 	begin
-	B = ( ~A ) + 1'b1;
+	B = ( ~A ) + 1'b1; //2's compliment
 	end
 endmodule

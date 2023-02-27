@@ -5,6 +5,6 @@ output reg [31:0] C;
 always@(A or B)
 	begin
 	
-	C = {A[31],(A[30:0] >> B)};
+	C = A >>> B; //Lock signed bit, shift the rest.
 	end
 endmodule

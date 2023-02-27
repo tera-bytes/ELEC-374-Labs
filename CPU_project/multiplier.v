@@ -1,3 +1,4 @@
+//Booth multiplier with bit-pair recoding
 `timescale 1ns/10ps
 module multiplier(A, B, C);
 input [31:0] A, B;
@@ -15,8 +16,8 @@ always@(A or B)
 			{1'b0, 1'b1, 1'b1} : C = C + (A << ((i)+1)); //2
 			{1'b1, 1'b0, 1'b0} : C = C - (A << ((i)+1)); //-2
 			{1'b1, 1'b0, 1'b1} : C = C - (A << (i)); //-1
-			{1'b1, 1'b1, 1'b0} : C = C - (A << (i)); //-2
-			default : C = C;
+			{1'b1, 1'b1, 1'b0} : C = C - (A << (i)); //-1
+			default : C = C; // 0
 		endcase
 	end
 	end

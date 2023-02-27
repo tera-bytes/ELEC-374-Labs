@@ -38,9 +38,9 @@ always@(posedge clock)
 			Reg_load1a : Present_state = Reg_load1b;
 			Reg_load1b : Present_state = Reg_load2a;
 			Reg_load2a : Present_state = Reg_load2b;
-			Reg_load2b : Present_state = Reg_load3a;
-			Reg_load3a : Present_state = Reg_load3b;
-			Reg_load3b : Present_state = T0;
+			Reg_load2b : Present_state = T0;
+//			Reg_load3a : Present_state = Reg_load3b;
+//			Reg_load3b : Present_state = T0;
 			T0 : Present_state = T1;
 			T1 : Present_state = T2;
 			T2 : Present_state = T3;
@@ -83,15 +83,15 @@ always@(Present_state)
 				#5 MDRout <= 1; R4in <= 1;
 				#15 MDRout <= 0; R4in <= 0; // initialize R3 with the value $14 (20)
 			end
-			Reg_load3a: begin
-				Mdatain <= 32'h00000018;
-				#5 read <= 1; MDRin <= 1;
-				#15 read <= 0; MDRin <= 0;
-			end
-			 Reg_load3b: begin
+//			Reg_load3a: begin
+//				Mdatain <= 32'h00000018;
+//				#5 read <= 1; MDRin <= 1;
+//				#15 read <= 0; MDRin <= 0;
+//			end
+//			 Reg_load3b: begin
 //				#5 MDRout <= 1; R1in <= 1;
 //				#15 MDRout <= 0; R1in <= 0; // initialize R1 with the value $18 (24)
-			end
+//			end
 			T0: begin // see if you need to de-assert these signals
 				#5 PCout <= 1; MARin <= 1; IncPC <= 1; Zlowin <= 1;
 				#15 PCout <= 0; MARin <= 0; IncPC <= 0; Zlowin <= 0;
@@ -107,10 +107,10 @@ always@(Present_state)
 			end
 			T3: begin
 				# 5 R6out <= 1; Yin <= 1;
-				# 15 R6out <= 0; Yin <= 0; // R2 into Y
+				# 15 R6out <= 0; Yin <= 0; // R6 into Y
 			end
 			T4: begin
-				# 5 R4out <= 1; operation <= 5'b01011; Zlowin <= 1; //"AND" //R3 to muxout, direct to ALU
+				# 5 R4out <= 1; operation <= 5'b01011; Zlowin <= 1; //"AND" //R4 to muxout, direct to ALU
 				# 15 R4out <= 0; Zlowin <= 0;
 			end
 			T5: begin

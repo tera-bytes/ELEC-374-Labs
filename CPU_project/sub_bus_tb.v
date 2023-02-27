@@ -55,7 +55,7 @@ always@(Present_state)
 			Default: begin
 
 				PCout <= 0; ZLOout <= 0; MDRout <= 0; // initialize the signals
-				R2out <= 0; R3out <= 0; MARin <= 0; Zlowin <= 0;
+				R4out <= 0; R5out <= 0; MARin <= 0; Zlowin <= 0;
 				PCin <=0; MDRin <= 0; IRin <= 0; Yin <= 0;
 				IncPC <=0; read <= 0; operation <= 5'b00000;
 				R0in <=0; R4in<=0; R5in<=0; Mdatain <= 32'h00000000;
@@ -72,7 +72,7 @@ always@(Present_state)
 			end
 			Reg_load1b: begin
 				#5 MDRout <= 1; R4in <= 1;
-				#15 MDRout <= 0; R4in <= 0; // initialize R2 with the value $12 (18)
+				#15 MDRout <= 0; R4in <= 0; // initialize R4 with the value $12 (18)
 			end
 			Reg_load2a: begin
 				Mdatain <= 32'h00000014;
@@ -81,7 +81,7 @@ always@(Present_state)
 			end
 			 Reg_load2b: begin
 				#5 MDRout <= 1; R5in <= 1;
-				#15 MDRout <= 0; R5in <= 0; // initialize R3 with the value $14 (20)
+				#15 MDRout <= 0; R5in <= 0; // initialize R5 with the value $14 (20)
 			end
 			Reg_load3a: begin
 				Mdatain <= 32'h00000018;
@@ -90,7 +90,7 @@ always@(Present_state)
 			end
 			 Reg_load3b: begin
 				#5 MDRout <= 1; R0in <= 1;
-				#15 MDRout <= 0; R0in <= 0; // initialize R1 with the value $18 (24)
+				#15 MDRout <= 0; R0in <= 0; // initialize R0 with the value $18 (24)
 			end
 			T0: begin // see if you need to de-assert these signals
 				#5 PCout <= 1; MARin <= 1; IncPC <= 1; Zlowin <= 1;
@@ -107,14 +107,14 @@ always@(Present_state)
 			end
 			T3: begin
 				# 5 R4out <= 1; Yin <= 1;
-				# 15 R4out <= 0; Yin <= 0; // R2 into Y
+				# 15 R4out <= 0; Yin <= 0; // R4 into Y
 			end
 			T4: begin
-				# 5 R5out <= 1; operation <= 5'b00100; Zlowin <= 1; //"AND" //R3 to muxout, direct to ALU
+				# 5 R5out <= 1; operation <= 5'b00100; Zlowin <= 1; //"SUB" //R5 to muxout, direct to ALU
 				# 15 R5out <= 0; Zlowin <= 0;
 			end
 			T5: begin
-				# 5 ZLOout <= 1; R0in <= 1; // result from alu (ZLOout) to R1
+				# 5 ZLOout <= 1; R0in <= 1; // result from alu (ZLOout) to R0
 				# 15 ZLOout <= 0; R0in <= 0; 
 			end
 		endcase
