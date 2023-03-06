@@ -10,6 +10,8 @@ module and_bus_tb;
 		R9out, R10out, R11out, R12out, R13out, 
 		R14out, R15out, HIout, LOout, ZHIout, 
 		ZLOout, PCout, MDRout, Inportout, Cout;
+	reg [31:0] R1, R2, R3;
+	reg [31:0] MuxOut;
 
 	parameter	Default = 4'b0000, Reg_load1a = 4'b0001, Reg_load1b = 4'b0010, Reg_load2a = 4'b0011,
 					Reg_load2b = 4'b0100, Reg_load3a = 4'b0101, Reg_load3b = 4'b0110, T0 = 4'b0111,
@@ -23,7 +25,7 @@ bus BUS(clock, clear, R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9in
 	R9out, R10out, R11out, R12out, R13out, 
 	R14out, R15out, HIout, LOout, ZHIout, 
 	ZLOout, PCout, MDRout, Inportout, Cout, IncPC, read, Mdatain,
-	operation);
+	operation, R1, R2, R3, MuxOut);
 
 initial
 	begin

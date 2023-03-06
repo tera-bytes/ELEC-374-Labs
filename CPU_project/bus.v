@@ -2,35 +2,42 @@ module bus(
 
 input wire clock, clear,
 
-input wire R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9in,
-	R10in, R11in, R12in, R13in, R14in, R15in, HIin, LOin, Zhighin, Zlowin,
-	PCin, MDRin, OutPortin, Cin, MARin, IRin, Yin, //register enables
+input wire Gra, Grb, Grc,
+input wire Rin, Rout, BAout,
+
+input wire HIin, LOin, Zhighin, Zlowin,
+	PCin, MDRin, OutPortin, MARin, IRin, Yin, //register enables
 
 	
-input wire R0out, R1out, R2out, R3out, 
-	R4out, R5out, R6out, R7out, R8out, 
-	R9out, R10out, R11out, R12out, R13out, 
-	R14out, R15out, HIout, LOout, ZHIout, 
+input wire HIout, LOout, ZHIout, 
 	ZLOout, PCout, MDRout, Inportout, Cout,
 	//Controls register outputs, encoder inputs
 	
-input wire IncPC, read,
+input wire IncPC, write, read,
 
 input wire [31:0] Mdatain,
 	
 input wire [4:0] operation
+
 );
 
-	wire [31:0] busMuxIn_0R, busMuxIn_1R, busMuxIn_2R, busMuxIn_3R, 
+	wire R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9in,
+		R10in, R11in, R12in, R13in, R14in, R15in;
+	
+	wire R0out, R1out, R2out, R3out, 
+		R4out, R5out, R6out, R7out, R8out, 
+		R9out, R10out, R11out, R12out, R13out, 
+		R14out, R15out;
+
+	wire [31:0] busMuxIn_0R, busMuxIn_1R, busMuxIn_2R, busMuxIn_3R,
 		busMuxIn_4R, busMuxIn_5R, busMuxIn_6R, busMuxIn_7R, busMuxIn_8R, 
 		busMuxIn_9R, busMuxIn_10R, busMuxIn_11R, busMuxIn_12R, busMuxIn_13R, 
 		busMuxIn_14R, busMuxIn_15R, busMuxIn_HI, busMuxIn_LO, busMuxIn_ZHI, 
-		busMuxIn_ZLO, busMuxIn_PC, busMuxIn_MDR, busMuxIn_InPort, busMuxIn_C, Y_data_out;
-
-	wire [31:0] Muxout;
-	wire [31:0] MDR_mux_out;
+		busMuxIn_ZLO, busMuxIn_PC, busMuxIn_MDR, busMuxIn_InPort, busMuxIn_C, Y_data_out, ir_out;
 	
 	wire [63:0] z_data_out;
+	
+	wire [31:0] Muxout;
 	
 	wire [31:0] encodein;
 	wire [4:0] encodeout;
@@ -53,7 +60,7 @@ input wire [4:0] operation
 	ZLOout, PCout, MDRout, Inportout, Cout, encodeout);
 	
 	
-	register register0 (clock, clear, R0in, Muxout, busMuxIn_0R);
+	zero_register reg_0(clock, clear, R0in, BAout, Muxout, busMuxIn_0R);
 	register register1 (clock, clear, R1in, Muxout, busMuxIn_1R);
 	register register2 (clock, clear, R2in, Muxout, busMuxIn_2R);
 	register register3 (clock, clear, R3in, Muxout, busMuxIn_3R);
@@ -78,15 +85,29 @@ input wire [4:0] operation
 	
 	register registerMDR (clock, clear, MDRin, MDR_mux_out, busMuxIn_MDR);
 	register registerInPort (clock, clear, OutPortin, Muxout, busMuxIn_InPort);
-	register registerC (clock, clear, Cin, Muxout, busMuxIn_C);
 	
-	register registerIR (clock, clear, IRin, Muxout, controlIn);
+	
+	assign busMuxIn_C = ir_out[18] ? {{13{1'b1}},ir_out[17:0]} : {{13{1'b0}},ir_out[17:0]};
+	
+	register registerIR (clock, clear, IRin, Muxout, ir_out);
 	
 	register registerMAR (clock, clear, MARin, Muxout, MemIn);
 	
 	register registerY (clock, clear, Yin, Muxout, Y_data_out);
 	
 	alu this_alu(Y_data_out, Muxout, operation, z_data_out);
+	
+	reg [8:0] ram_address;
+	
+	Ram this_ram(busMuxIn_MDR, ram_address, write, read, clock, Mdatain);
+	
+
+	select_encode this_select_encode(ir_out, Gra, Grb, Grc, Rin, Rout, BAout, 
+	{R15in, R14in, R13in, R12in, R11in, R10in, R9in, 
+	R8in, R7in, R6in, R5in, R4in, R3in, R2in, R1in, R0in}, 
+	{R15out, R14out, R13out, R12out, R11out, R10out, R9out, R8out, R7out, 
+	R6out, R5out, R4out, R3out, R2out, R1out, R0out}
+		);
 	
 	
 endmodule
