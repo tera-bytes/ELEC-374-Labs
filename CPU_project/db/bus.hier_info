@@ -7,6 +7,7 @@ Grc => Grc.IN1
 Rin => Rin.IN1
 Rout => Rout.IN1
 BAout => BAout.IN2
+CON_in => CON_in.IN1
 HIin => HIin.IN1
 LOin => LOin.IN1
 Zhighin => Zhighin.IN1
@@ -28,43 +29,12 @@ Cout => Cout.IN1
 IncPC => IncPC.IN1
 write => write.IN1
 read => read.IN2
-Mdatain[0] => Mdatain[0].IN2
-Mdatain[1] => Mdatain[1].IN2
-Mdatain[2] => Mdatain[2].IN2
-Mdatain[3] => Mdatain[3].IN2
-Mdatain[4] => Mdatain[4].IN2
-Mdatain[5] => Mdatain[5].IN2
-Mdatain[6] => Mdatain[6].IN2
-Mdatain[7] => Mdatain[7].IN2
-Mdatain[8] => Mdatain[8].IN2
-Mdatain[9] => Mdatain[9].IN2
-Mdatain[10] => Mdatain[10].IN2
-Mdatain[11] => Mdatain[11].IN2
-Mdatain[12] => Mdatain[12].IN2
-Mdatain[13] => Mdatain[13].IN2
-Mdatain[14] => Mdatain[14].IN2
-Mdatain[15] => Mdatain[15].IN2
-Mdatain[16] => Mdatain[16].IN2
-Mdatain[17] => Mdatain[17].IN2
-Mdatain[18] => Mdatain[18].IN2
-Mdatain[19] => Mdatain[19].IN2
-Mdatain[20] => Mdatain[20].IN2
-Mdatain[21] => Mdatain[21].IN2
-Mdatain[22] => Mdatain[22].IN2
-Mdatain[23] => Mdatain[23].IN2
-Mdatain[24] => Mdatain[24].IN2
-Mdatain[25] => Mdatain[25].IN2
-Mdatain[26] => Mdatain[26].IN2
-Mdatain[27] => Mdatain[27].IN2
-Mdatain[28] => Mdatain[28].IN2
-Mdatain[29] => Mdatain[29].IN2
-Mdatain[30] => Mdatain[30].IN2
-Mdatain[31] => Mdatain[31].IN2
 operation[0] => operation[0].IN1
 operation[1] => operation[1].IN1
 operation[2] => operation[2].IN1
 operation[3] => operation[3].IN1
 operation[4] => operation[4].IN1
+CON_out <= CON_FF:this_con_ff.port3
 
 
 |bus|mux_MDR:MDRmux
@@ -14911,5 +14881,93 @@ out[12] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
 out[13] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
 out[14] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
 out[15] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bus|CON_FF:this_con_ff
+bus_in[0] => WideNor0.IN0
+bus_in[0] => WideNor1.IN0
+bus_in[1] => WideNor0.IN1
+bus_in[1] => WideNor1.IN1
+bus_in[2] => WideNor0.IN2
+bus_in[2] => WideNor1.IN2
+bus_in[3] => WideNor0.IN3
+bus_in[3] => WideNor1.IN3
+bus_in[4] => WideNor0.IN4
+bus_in[4] => WideNor1.IN4
+bus_in[5] => WideNor0.IN5
+bus_in[5] => WideNor1.IN5
+bus_in[6] => WideNor0.IN6
+bus_in[6] => WideNor1.IN6
+bus_in[7] => WideNor0.IN7
+bus_in[7] => WideNor1.IN7
+bus_in[8] => WideNor0.IN8
+bus_in[8] => WideNor1.IN8
+bus_in[9] => WideNor0.IN9
+bus_in[9] => WideNor1.IN9
+bus_in[10] => WideNor0.IN10
+bus_in[10] => WideNor1.IN10
+bus_in[11] => WideNor0.IN11
+bus_in[11] => WideNor1.IN11
+bus_in[12] => WideNor0.IN12
+bus_in[12] => WideNor1.IN12
+bus_in[13] => WideNor0.IN13
+bus_in[13] => WideNor1.IN13
+bus_in[14] => WideNor0.IN14
+bus_in[14] => WideNor1.IN14
+bus_in[15] => WideNor0.IN15
+bus_in[15] => WideNor1.IN15
+bus_in[16] => WideNor0.IN16
+bus_in[16] => WideNor1.IN16
+bus_in[17] => WideNor0.IN17
+bus_in[17] => WideNor1.IN17
+bus_in[18] => WideNor0.IN18
+bus_in[18] => WideNor1.IN18
+bus_in[19] => WideNor0.IN19
+bus_in[19] => WideNor1.IN19
+bus_in[20] => WideNor0.IN20
+bus_in[20] => WideNor1.IN20
+bus_in[21] => WideNor0.IN21
+bus_in[21] => WideNor1.IN21
+bus_in[22] => WideNor0.IN22
+bus_in[22] => WideNor1.IN22
+bus_in[23] => WideNor0.IN23
+bus_in[23] => WideNor1.IN23
+bus_in[24] => WideNor0.IN24
+bus_in[24] => WideNor1.IN24
+bus_in[25] => WideNor0.IN25
+bus_in[25] => WideNor1.IN25
+bus_in[26] => WideNor0.IN26
+bus_in[26] => WideNor1.IN26
+bus_in[27] => WideNor0.IN27
+bus_in[27] => WideNor1.IN27
+bus_in[28] => WideNor0.IN28
+bus_in[28] => WideNor1.IN28
+bus_in[29] => WideNor0.IN29
+bus_in[29] => WideNor1.IN29
+bus_in[30] => WideNor0.IN30
+bus_in[30] => WideNor1.IN30
+bus_in[31] => WideNor0.IN31
+bus_in[31] => WideNor1.IN31
+bus_in[31] => Mux0.IN15
+bus_in[31] => Mux0.IN14
+ir_field[0] => ir_field[0].IN1
+ir_field[1] => ir_field[1].IN1
+CON_in => CON_in.IN1
+q <= d_flip_flop:CON.port2
+
+
+|bus|CON_FF:this_con_ff|decoder_2_4:decoder
+in[0] => ShiftLeft0.IN6
+in[1] => ShiftLeft0.IN5
+out[0] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bus|CON_FF:this_con_ff|d_flip_flop:CON
+d => q.DATAIN
+clk => ~NO_FANOUT~
+q <= d.DB_MAX_OUTPUT_PORT_TYPE
 
 

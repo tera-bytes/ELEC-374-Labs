@@ -3,33 +3,55 @@ K3
 13
 cModel Technology
 Z0 dC:\Users\olive\OneDrive\Documents\GitHub\ELEC-374-Labs\CPU_project\simulation\modelsim
-vdecoder_4_16
-IZK[;Q??Y6D82P3MzIZEOi0
-Vf01<i]gnRZP]EGb];kd4l3
+vCON_FF
+IaKC0hcCV[J>0Z1Z]nkD0;2
+VlMBC]T:lVHaWj_5g>]>F]0
 Z1 dC:\Users\olive\OneDrive\Documents\GitHub\ELEC-374-Labs\CPU_project\simulation\modelsim
-w1678137925
-8C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/decoder_4_16.v
-FC:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/decoder_4_16.v
+w1678312402
+8C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/CON_FF.v
+FC:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/CON_FF.v
 L0 1
 Z2 OV;L;10.1d;51
 r1
 31
 Z3 o-vlog01compat -work work -O0
+n@c@o@n_@f@f
 Z4 !s92 -vlog01compat -work work +incdir+C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project -O0
 !i10b 1
-!s100 0oHAj=;0<jZ8Wg_^:Rn@T1
+!s100 QbSlQVTa]?:ERLQCC>o>E2
 !s85 0
-!s108 1678138528.684000
-!s107 C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/decoder_4_16.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project|C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/decoder_4_16.v|
+!s108 1678312453.766000
+!s107 C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/CON_FF.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project|C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/CON_FF.v|
 !s101 -O0
-vselect_encode
-IgfKFQ]mPCfHG6>7Cf:1YE0
-VmCVJ8Rfo[k7?mgKJgj>LZ3
+vCON_FF_tb
+!i10b 1
+!s100 iCYSk]zS>nL:?EO7;]KYT0
+I;HJaLF<PTBfd:>GzQAWcA3
+V4_U6z>Vb5aM:jJI:fHHz61
 R1
-w1678138008
-8C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/select_encode.v
-FC:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/select_encode.v
+w1678311988
+8C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/CON_FF_tb.v
+FC:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/CON_FF_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1678312453.979000
+!s107 C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/CON_FF_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project|C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/CON_FF_tb.v|
+!s101 -O0
+R3
+R4
+n@c@o@n_@f@f_tb
+vd_flip_flop
+IbeTg2CU<3X4:8A[7:J[542
+VW`:oCYf5BeE2g>j30L8c;0
+R1
+w1678311093
+8C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/d_flip_flop.v
+FC:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/d_flip_flop.v
 L0 1
 R2
 r1
@@ -37,29 +59,29 @@ r1
 R3
 R4
 !i10b 1
-!s100 C=bVY^=QDOBQDeeR:l0c72
+!s100 FE8_d3QHJYYaRJAMJ?L942
 !s85 0
-!s108 1678138528.615000
-!s107 C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/select_encode.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project|C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/select_encode.v|
+!s108 1678312453.912000
+!s107 C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/d_flip_flop.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project|C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/d_flip_flop.v|
 !s101 -O0
-vselect_encode_tb
-!i10b 1
-!s100 E:_ZbkTU:Lhib>54oT@BQ1
-IkNzG=E57XR2nk^;[nY;ik1
-V<zKb_^1fnj?X]<jAjM0ME1
+vdecoder_2_4
+IG;WP9OXBL:Ygjbac`NQTN0
+VlP=IC_9?EgNF@9fMFbm2j3
 R1
-w1678138444
-8C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/select_encode_tb.v
-FC:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/select_encode_tb.v
+w1678311047
+8C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/decoder_2_4.v
+FC:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/decoder_2_4.v
 L0 1
 R2
 r1
-!s85 0
 31
-!s108 1678138528.752000
-!s107 C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/select_encode_tb.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project|C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/select_encode_tb.v|
-!s101 -O0
 R3
 R4
+!i10b 1
+!s100 B^`z896zdjU5NmGDMKhFm1
+!s85 0
+!s108 1678312453.835000
+!s107 C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/decoder_2_4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project|C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/decoder_2_4.v|
+!s101 -O0

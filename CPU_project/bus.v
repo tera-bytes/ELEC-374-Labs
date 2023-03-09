@@ -3,7 +3,7 @@ module bus(
 input wire clock, clear,
 
 input wire Gra, Grb, Grc,
-input wire Rin, Rout, BAout,
+input wire Rin, Rout, BAout, CON_in,
 
 input wire HIin, LOin, Zhighin, Zlowin,
 	PCin, MDRin, OutPortin, MARin, IRin, Yin, //register enables
@@ -14,10 +14,10 @@ input wire HIout, LOout, ZHIout,
 	//Controls register outputs, encoder inputs
 	
 input wire IncPC, write, read,
-
-input wire [31:0] Mdatain,
 	
-input wire [4:0] operation
+input wire [4:0] operation,
+
+output CON_out
 
 );
 
@@ -108,6 +108,7 @@ input wire [4:0] operation
 	{R15out, R14out, R13out, R12out, R11out, R10out, R9out, R8out, R7out, 
 	R6out, R5out, R4out, R3out, R2out, R1out, R0out}
 		);
-	
+		
+	CON_FF this_con_ff(Muxout, ir_out[20:19], CON_in, CON_out);
 	
 endmodule

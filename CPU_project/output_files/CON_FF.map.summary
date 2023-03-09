@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Mar 08 16:53:28 2023
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Revision Name : CON_FF
+Top-level Entity Name : CON_FF
+Family : Cyclone III
+Total logic elements : 11
+    Total combinational functions : 11
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 36
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

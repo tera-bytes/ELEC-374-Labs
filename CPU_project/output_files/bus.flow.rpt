@@ -1,5 +1,5 @@
 Flow report for bus
-Mon Mar 06 17:14:05 2023
+Wed Mar 08 17:10:34 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,18 +40,18 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Mon Mar 06 17:14:05 2023      ;
+; Flow Status                        ; Successful - Wed Mar 08 17:10:34 2023      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; bus                                        ;
 ; Top-level Entity Name              ; bus                                        ;
 ; Family                             ; Cyclone III                                ;
 ; Device                             ; EP3C16F484C6                               ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 0 / 15,408 ( 0 % )                         ;
-;     Total combinational functions  ; 0 / 15,408 ( 0 % )                         ;
+; Total logic elements               ; 8,273 / 15,408 ( 54 % )                    ;
+;     Total combinational functions  ; 8,273 / 15,408 ( 54 % )                    ;
 ;     Dedicated logic registers      ; 0 / 15,408 ( 0 % )                         ;
 ; Total registers                    ; 0                                          ;
-; Total pins                         ; 66 / 347 ( 19 % )                          ;
+; Total pins                         ; 36 / 347 ( 10 % )                          ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0 / 516,096 ( 0 % )                        ;
 ; Embedded Multiplier 9-bit elements ; 0 / 112 ( 0 % )                            ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/06/2023 17:13:52 ;
+; Start date & time ; 03/08/2023 17:04:57 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; bus                 ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 38917505025.167814083218092           ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 38917505025.167831309704632           ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; and_bus_tb     ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; bus_tb         ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; Or_bus_tb      ;
@@ -168,12 +168,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4625 MB             ; 00:00:01                           ;
-; Fitter                    ; 00:00:04     ; 1.0                     ; 4902 MB             ; 00:00:03                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4571 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4609 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4529 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:07     ; --                      ; --                  ; 00:00:06                           ;
+; Analysis & Synthesis      ; 00:00:21     ; 1.0                     ; 4660 MB             ; 00:00:17                           ;
+; Fitter                    ; 00:02:48     ; 1.0                     ; 4979 MB             ; 00:02:03                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4598 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:02:10     ; 1.0                     ; 4734 MB             ; 00:01:35                           ;
+; EDA Netlist Writer        ; 00:00:08     ; 1.0                     ; 4611 MB             ; 00:00:06                           ;
+; Total                     ; 00:05:28     ; --                      ; --                  ; 00:04:02                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

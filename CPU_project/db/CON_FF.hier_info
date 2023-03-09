@@ -1,0 +1,88 @@
+|CON_FF
+bus_in[0] => WideNor0.IN0
+bus_in[0] => WideNor1.IN0
+bus_in[1] => WideNor0.IN1
+bus_in[1] => WideNor1.IN1
+bus_in[2] => WideNor0.IN2
+bus_in[2] => WideNor1.IN2
+bus_in[3] => WideNor0.IN3
+bus_in[3] => WideNor1.IN3
+bus_in[4] => WideNor0.IN4
+bus_in[4] => WideNor1.IN4
+bus_in[5] => WideNor0.IN5
+bus_in[5] => WideNor1.IN5
+bus_in[6] => WideNor0.IN6
+bus_in[6] => WideNor1.IN6
+bus_in[7] => WideNor0.IN7
+bus_in[7] => WideNor1.IN7
+bus_in[8] => WideNor0.IN8
+bus_in[8] => WideNor1.IN8
+bus_in[9] => WideNor0.IN9
+bus_in[9] => WideNor1.IN9
+bus_in[10] => WideNor0.IN10
+bus_in[10] => WideNor1.IN10
+bus_in[11] => WideNor0.IN11
+bus_in[11] => WideNor1.IN11
+bus_in[12] => WideNor0.IN12
+bus_in[12] => WideNor1.IN12
+bus_in[13] => WideNor0.IN13
+bus_in[13] => WideNor1.IN13
+bus_in[14] => WideNor0.IN14
+bus_in[14] => WideNor1.IN14
+bus_in[15] => WideNor0.IN15
+bus_in[15] => WideNor1.IN15
+bus_in[16] => WideNor0.IN16
+bus_in[16] => WideNor1.IN16
+bus_in[17] => WideNor0.IN17
+bus_in[17] => WideNor1.IN17
+bus_in[18] => WideNor0.IN18
+bus_in[18] => WideNor1.IN18
+bus_in[19] => WideNor0.IN19
+bus_in[19] => WideNor1.IN19
+bus_in[20] => WideNor0.IN20
+bus_in[20] => WideNor1.IN20
+bus_in[21] => WideNor0.IN21
+bus_in[21] => WideNor1.IN21
+bus_in[22] => WideNor0.IN22
+bus_in[22] => WideNor1.IN22
+bus_in[23] => WideNor0.IN23
+bus_in[23] => WideNor1.IN23
+bus_in[24] => WideNor0.IN24
+bus_in[24] => WideNor1.IN24
+bus_in[25] => WideNor0.IN25
+bus_in[25] => WideNor1.IN25
+bus_in[26] => WideNor0.IN26
+bus_in[26] => WideNor1.IN26
+bus_in[27] => WideNor0.IN27
+bus_in[27] => WideNor1.IN27
+bus_in[28] => WideNor0.IN28
+bus_in[28] => WideNor1.IN28
+bus_in[29] => WideNor0.IN29
+bus_in[29] => WideNor1.IN29
+bus_in[30] => WideNor0.IN30
+bus_in[30] => WideNor1.IN30
+bus_in[31] => WideNor0.IN31
+bus_in[31] => WideNor1.IN31
+bus_in[31] => Mux0.IN15
+bus_in[31] => Mux0.IN14
+ir_field[0] => ir_field[0].IN1
+ir_field[1] => ir_field[1].IN1
+CON_in => CON_in.IN1
+q <= d_flip_flop:CON.port2
+
+
+|CON_FF|decoder_2_4:decoder
+in[0] => ShiftLeft0.IN6
+in[1] => ShiftLeft0.IN5
+out[0] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CON_FF|d_flip_flop:CON
+d => q.DATAIN
+clk => ~NO_FANOUT~
+q <= d.DB_MAX_OUTPUT_PORT_TYPE
+
+
