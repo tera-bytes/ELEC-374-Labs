@@ -90,22 +90,22 @@ output CON_out
 	//Outport
 	register regOutPort(clock, clear, OutPortin, Muxout, OutPortData); 
 	//Inport
-	register registerInPort (clock, clear, Inportout, InPortData,busMuxIn_InPort);
+	register registerInPort (clock, clear, Inportout, InPortData, busMuxIn_InPort);
 	
 	
 	assign busMuxIn_C = ir_out[18] ? {{13{1'b1}},ir_out[17:0]} : {{13{1'b0}},ir_out[17:0]};
 	
 	register registerIR (clock, clear, IRin, Muxout, ir_out);
 	
-	register registerMAR (clock, clear, MARin, Muxout, MemIn);
+	register registerMAR (clock, clear, MARin, Muxout, ram_address);
 	
 	register registerY (clock, clear, Yin, Muxout, Y_data_out);
 	
 	alu this_alu(Y_data_out, Muxout, operation, z_data_out);
 	
-	reg [8:0] ram_address;
+	wire [31:0] ram_address;
 	
-	Ram this_ram(busMuxIn_MDR, ram_address, write, read, clock, Mdatain);
+	Ram this_ram(busMuxIn_MDR, ram_address[8:0], write, read, clock, Mdatain);
 	
 
 	select_encode this_select_encode(ir_out, Gra, Grb, Grc, Rin, Rout, BAout, 

@@ -1,0 +1,73 @@
+MIF/HEX Update report for bus
+Mon Mar 13 17:29:23 2023
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. MIF/HEX Update Summary
+  3. MIF/HEX Update Processed Files
+  4. MIF/HEX Update Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------+
+; MIF/HEX Update Summary                                        ;
++-----------------------+---------------------------------------+
+; MIF/HEX Update Status ; Successful - Mon Mar 13 17:29:23 2023 ;
+; Revision Name         ; bus                                   ;
+; Top-level Entity Name ; bus                                   ;
+; Family                ; Cyclone III                           ;
+; Device                ; EP3C16F484C6                          ;
++-----------------------+---------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------+
+; MIF/HEX Update Processed Files                                                                   ;
++--------------------------------------------------------------------------------------------------+
+; File Name                                                                                        ;
++--------------------------------------------------------------------------------------------------+
+; C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/db/bus.ram0_ram_16ae1.hdl.mif ;
++--------------------------------------------------------------------------------------------------+
+
+
++-------------------------+
+; MIF/HEX Update Messages ;
++-------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit MIF/HEX Update
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Mon Mar 13 17:29:23 2023
+Info: Command: quartus_cdb bus -c bus --update_mif
+Warning (39023): Can't find Memory Initialization File ld_mif.mif -- skipped updates for this file
+Warning (39023): Can't find Memory Initialization File testMem.mif -- skipped updates for this file
+Info (39024): Processed the following Memory Initialization File(s)
+    Info (39025): Processed Memory Initialization File C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/db/bus.ram0_ram_16ae1.hdl.mif
+Info: Quartus II 64-Bit MIF/HEX Update was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4619 megabytes
+    Info: Processing ended: Mon Mar 13 17:29:24 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

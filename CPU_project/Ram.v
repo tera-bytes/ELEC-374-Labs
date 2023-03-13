@@ -7,12 +7,16 @@ module Ram
 );
 
 	// Declare the RAM variable (Keep low for testing, actual 511:0)
-	reg [31:0] ram[3:0];
+	reg [31:0] ram[511:0];
 	
 	// Variable to hold the registered read address
 	reg [8:0] addr_reg;
 	
-	always @ (clock)
+	initial begin : INIT
+		$readmemh("InitRam.mif", ram);
+	end
+	
+	always @ (posedge clock)
 	begin
 	// Write
 		if (write)
@@ -26,5 +30,6 @@ module Ram
 	// This is the natural behavior of the TriMatrix memory
 	// blocks in Single Port mode.  
 	assign q = ram[addr_reg];
+	
 	
 endmodule
