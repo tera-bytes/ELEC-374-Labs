@@ -38,6 +38,8 @@ output CON_out
 	wire [63:0] z_data_out;
 	
 	wire [31:0] Muxout;
+	wire [31:0] OutPortData;
+	reg [31:0] InPortData;
 	
 	wire [31:0] encodein;
 	wire [4:0] encodeout;
@@ -84,7 +86,11 @@ output CON_out
 	pc_32_bit registerPC (clock, clear, IncPC, PCin, Muxout, busMuxIn_PC);
 	
 	register registerMDR (clock, clear, MDRin, MDR_mux_out, busMuxIn_MDR);
-	register registerInPort (clock, clear, OutPortin, Muxout, busMuxIn_InPort);
+	
+	//Outport
+	register regOutPort(clock, clear, OutPortin, Muxout, OutPortData); 
+	//Inport
+	register registerInPort (clock, clear, Inportout, InPortData,busMuxIn_InPort);
 	
 	
 	assign busMuxIn_C = ir_out[18] ? {{13{1'b1}},ir_out[17:0]} : {{13{1'b0}},ir_out[17:0]};
