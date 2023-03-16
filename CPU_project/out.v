@@ -65,8 +65,8 @@ always@(Present_state)
 				#15 MDRout <= 0; IRin <= 0;
 			end
 			T3: begin
-				#5 Gra <= 1; Rin <= 1; OutPortin <= 1;
-				#15 Gra <= 0; Rin <= 0; OutPortin <= 0;
+				#5 Gra <= 1; Rout <= 1; OutPortin <= 1;
+				#15 Gra <= 0; Rout <= 0; OutPortin <= 0;
 				
 			end
 			
