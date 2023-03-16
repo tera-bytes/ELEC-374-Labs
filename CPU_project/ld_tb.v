@@ -1,14 +1,13 @@
 `timescale 1ns/10ps
 module ld_tb;
 	reg Gra, Grb, Grc, Rin, Rout, BAout, CON_in;
-	reg MARin, Zlowin, Zhighin, PCin, MDRin, IRin, Yin;
+	reg MARin, Zlowin, Zhighin, PCin, MDRin, OutPortin, IRin, Yin ;
 	reg IncPC, write, read, LOin, HIin;
-	reg clock;
+	reg clock, clear;
 	reg [4:0] operation;
 	reg [31:0] Mdatain;
-	reg HIout, LOout, ZHIout, 
-	ZLOout, PCout, MDRout, Inportout, Cout;
-	reg CON_out;
+	reg HIout, LOout, ZHIout, ZLOout, PCout, MDRout, Inportout, Cout;
+	wire CON_out;
 
 	parameter	Default = 4'b0000, T0 = 4'b0001, T1 = 4'b0010, T2 = 4'b0011, T3 = 4'b0100,
 					T4 = 4'b0101, T5 = 4'b0110, T6 = 4'b0111, T7 = 4'b1000;

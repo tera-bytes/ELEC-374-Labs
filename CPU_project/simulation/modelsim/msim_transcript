@@ -1,5 +1,5 @@
 # Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
-# do CON_FF_run_msim_rtl_verilog.do 
+# do bus_run_msim_rtl_verilog.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
@@ -10,42 +10,78 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project {C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/CON_FF.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project {C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/mux_MDR.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module CON_FF
+# -- Compiling module mux_MDR
 # 
 # Top level modules:
-# 	CON_FF
-# vlog -vlog01compat -work work +incdir+C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project {C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/decoder_2_4.v}
+# 	mux_MDR
+# vlog -vlog01compat -work work +incdir+C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project {C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/divider.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module decoder_2_4
+# -- Compiling module divider
 # 
 # Top level modules:
-# 	decoder_2_4
-# vlog -vlog01compat -work work +incdir+C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project {C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/d_flip_flop.v}
+# 	divider
+# vlog -vlog01compat -work work +incdir+C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project {C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/shiftRightArithmetic.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module d_flip_flop
+# -- Compiling module shiftRightArithmetic
 # 
 # Top level modules:
-# 	d_flip_flop
-# 
-# vlog -vlog01compat -work work +incdir+C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project {C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/CON_FF_tb.v}
+# 	shiftRightArithmetic
+# vlog -vlog01compat -work work +incdir+C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project {C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/shiftRight.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module CON_FF_tb
+# -- Compiling module shiftRight
 # 
 # Top level modules:
-# 	CON_FF_tb
+# 	shiftRight
+# vlog -vlog01compat -work work +incdir+C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project {C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/shiftLeft.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module shiftLeft
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs="+acc"  CON_FF_tb
-# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps CON_FF_tb 
-# Loading work.CON_FF_tb
-# Loading work.CON_FF
-# Loading work.decoder_2_4
-# Loading work.d_flip_flop
+# Top level modules:
+# 	shiftLeft
+# vlog -vlog01compat -work work +incdir+C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project {C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/rotateRight.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module rotateRight
 # 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run 500 ns
+# Top level modules:
+# 	rotateRight
+# vlog -vlog01compat -work work +incdir+C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project {C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/rotateLeft.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module rotateLeft
+# 
+# Top level modules:
+# 	rotateLeft
+# vlog -vlog01compat -work work +incdir+C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project {C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/Negate.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Negate
+# 
+# Top level modules:
+# 	Negate
+# vlog -vlog01compat -work work +incdir+C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project {C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/multiplier.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# vlog -vlog01compat -work work +incdir+C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project {C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/mux_32_1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux_32_1
+# 
+# Top level modules:
+# 	mux_32_1
+# vlog -vlog01compat -work work +incdir+C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project {C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/encoder_32_5.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module encoder_32_5
+# 
+# Top level modules:
+# 	encoder_32_5
+# vlog -vlog01compat -work work +incdir+C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project {C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/bus.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bus
+# ** Error: C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project/bus.v(110): 'ram_address' already declared in this scope (bus).
+# ** Error: C:/altera/13.0sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./bus_run_msim_rtl_verilog.do line 19
+# C:/altera/13.0sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -vlog01compat -work work +incdir+C:/Users/olive/OneDrive/Documents/GitHub/ELEC-374-Labs/CPU_project {C:/Users/olive/OneDrive/Documents/GitHub/ELE..."

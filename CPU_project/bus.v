@@ -17,7 +17,11 @@ input wire IncPC, write, read,
 	
 input wire [4:0] operation,
 
-output CON_out
+input wire [31:0] InPortData,
+
+output CON_out,
+
+output [31:0] OutPortData
 
 );
 
@@ -38,8 +42,8 @@ output CON_out
 	wire [63:0] z_data_out;
 	
 	wire [31:0] Muxout;
-	wire [31:0] OutPortData;
-	reg [31:0] InPortData;
+	wire [31:0] Mdatain;
+	wire [31:0] MDR_mux_out;
 	
 	wire [31:0] encodein;
 	wire [4:0] encodeout;
@@ -93,7 +97,7 @@ output CON_out
 	register registerInPort (clock, clear, Inportout, InPortData, busMuxIn_InPort);
 	
 	
-	assign busMuxIn_C = ir_out[18] ? {{13{1'b1}},ir_out[17:0]} : {{13{1'b0}},ir_out[17:0]};
+	assign busMuxIn_C = ir_out[18] ? {{14{1'b1}},ir_out[17:0]} : {{14{1'b0}},ir_out[17:0]};
 	
 	register registerIR (clock, clear, IRin, Muxout, ir_out);
 	

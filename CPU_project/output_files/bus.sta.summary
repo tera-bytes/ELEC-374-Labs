@@ -1,0 +1,401 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'Zhighin'
+Slack : -167.243
+TNS   : -5308.619
+
+Type  : Slow 1200mV 85C Model Setup 'Zlowin'
+Slack : -164.591
+TNS   : -3308.190
+
+Type  : Slow 1200mV 85C Model Setup 'MARin'
+Slack : -12.245
+TNS   : -97.349
+
+Type  : Slow 1200mV 85C Model Setup 'Yin'
+Slack : -12.076
+TNS   : -329.649
+
+Type  : Slow 1200mV 85C Model Setup 'IRin'
+Slack : -11.895
+TNS   : -289.870
+
+Type  : Slow 1200mV 85C Model Setup 'HIin'
+Slack : -11.786
+TNS   : -331.093
+
+Type  : Slow 1200mV 85C Model Setup 'LOin'
+Slack : -11.247
+TNS   : -326.962
+
+Type  : Slow 1200mV 85C Model Setup 'Gra'
+Slack : -11.167
+TNS   : -4697.179
+
+Type  : Slow 1200mV 85C Model Setup 'MDRin'
+Slack : -10.190
+TNS   : -10.190
+
+Type  : Slow 1200mV 85C Model Setup 'IncPC'
+Slack : -9.937
+TNS   : -268.930
+
+Type  : Slow 1200mV 85C Model Setup 'clock'
+Slack : -1.156
+TNS   : -9.742
+
+Type  : Slow 1200mV 85C Model Hold 'Gra'
+Slack : -2.523
+TNS   : -240.580
+
+Type  : Slow 1200mV 85C Model Hold 'IncPC'
+Slack : -1.166
+TNS   : -26.818
+
+Type  : Slow 1200mV 85C Model Hold 'clock'
+Slack : 0.513
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Yin'
+Slack : 1.209
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'LOin'
+Slack : 1.244
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'MARin'
+Slack : 1.330
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'HIin'
+Slack : 1.346
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'IRin'
+Slack : 1.555
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'MDRin'
+Slack : 2.067
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Zlowin'
+Slack : 2.937
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Zhighin'
+Slack : 3.060
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Gra'
+Slack : -3.000
+TNS   : -1381.720
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -32.696
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'HIin'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'IRin'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'IncPC'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'LOin'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'MARin'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'MDRin'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Yin'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Zhighin'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Zlowin'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Setup 'Zhighin'
+Slack : -148.863
+TNS   : -4724.229
+
+Type  : Slow 1200mV 0C Model Setup 'Zlowin'
+Slack : -146.455
+TNS   : -2952.433
+
+Type  : Slow 1200mV 0C Model Setup 'MARin'
+Slack : -11.055
+TNS   : -87.418
+
+Type  : Slow 1200mV 0C Model Setup 'Yin'
+Slack : -10.851
+TNS   : -295.318
+
+Type  : Slow 1200mV 0C Model Setup 'IRin'
+Slack : -10.644
+TNS   : -259.256
+
+Type  : Slow 1200mV 0C Model Setup 'HIin'
+Slack : -10.566
+TNS   : -296.813
+
+Type  : Slow 1200mV 0C Model Setup 'LOin'
+Slack : -10.125
+TNS   : -292.915
+
+Type  : Slow 1200mV 0C Model Setup 'Gra'
+Slack : -10.057
+TNS   : -4220.844
+
+Type  : Slow 1200mV 0C Model Setup 'MDRin'
+Slack : -9.088
+TNS   : -9.088
+
+Type  : Slow 1200mV 0C Model Setup 'IncPC'
+Slack : -8.943
+TNS   : -241.653
+
+Type  : Slow 1200mV 0C Model Setup 'clock'
+Slack : -1.012
+TNS   : -8.359
+
+Type  : Slow 1200mV 0C Model Hold 'Gra'
+Slack : -2.132
+TNS   : -204.554
+
+Type  : Slow 1200mV 0C Model Hold 'IncPC'
+Slack : -1.048
+TNS   : -24.446
+
+Type  : Slow 1200mV 0C Model Hold 'clock'
+Slack : 0.515
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Yin'
+Slack : 1.130
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'LOin'
+Slack : 1.163
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'HIin'
+Slack : 1.224
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'MARin'
+Slack : 1.247
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'IRin'
+Slack : 1.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'MDRin'
+Slack : 1.880
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Zlowin'
+Slack : 2.649
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Zhighin'
+Slack : 2.777
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Gra'
+Slack : -3.000
+TNS   : -1091.023
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -32.696
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'HIin'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'IRin'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'IncPC'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'LOin'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'MARin'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'MDRin'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Yin'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Zhighin'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Zlowin'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Setup 'Zhighin'
+Slack : -97.375
+TNS   : -3089.797
+
+Type  : Fast 1200mV 0C Model Setup 'Zlowin'
+Slack : -95.805
+TNS   : -1913.941
+
+Type  : Fast 1200mV 0C Model Setup 'MARin'
+Slack : -6.608
+TNS   : -51.461
+
+Type  : Fast 1200mV 0C Model Setup 'Gra'
+Slack : -6.544
+TNS   : -2743.415
+
+Type  : Fast 1200mV 0C Model Setup 'Yin'
+Slack : -6.462
+TNS   : -171.501
+
+Type  : Fast 1200mV 0C Model Setup 'HIin'
+Slack : -6.423
+TNS   : -172.532
+
+Type  : Fast 1200mV 0C Model Setup 'IRin'
+Slack : -6.370
+TNS   : -152.882
+
+Type  : Fast 1200mV 0C Model Setup 'LOin'
+Slack : -5.968
+TNS   : -169.995
+
+Type  : Fast 1200mV 0C Model Setup 'MDRin'
+Slack : -5.399
+TNS   : -5.399
+
+Type  : Fast 1200mV 0C Model Setup 'IncPC'
+Slack : -5.102
+TNS   : -133.917
+
+Type  : Fast 1200mV 0C Model Setup 'clock'
+Slack : -0.832
+TNS   : -7.990
+
+Type  : Fast 1200mV 0C Model Hold 'Gra'
+Slack : -1.762
+TNS   : -204.030
+
+Type  : Fast 1200mV 0C Model Hold 'IncPC'
+Slack : -0.812
+TNS   : -21.049
+
+Type  : Fast 1200mV 0C Model Hold 'Yin'
+Slack : 0.575
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'LOin'
+Slack : 0.604
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'HIin'
+Slack : 0.670
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'MARin'
+Slack : 0.672
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clock'
+Slack : 0.782
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'IRin'
+Slack : 0.787
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'MDRin'
+Slack : 1.092
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Zlowin'
+Slack : 1.561
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Zhighin'
+Slack : 1.649
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Gra'
+Slack : -3.000
+TNS   : -922.927
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -30.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'IncPC'
+Slack : -3.000
+TNS   : -9.221
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'HIin'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'IRin'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'LOin'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'MARin'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'MDRin'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Yin'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Zhighin'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Zlowin'
+Slack : -3.000
+TNS   : -3.000
+
+------------------------------------------------------------

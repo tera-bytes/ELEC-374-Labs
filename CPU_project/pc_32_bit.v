@@ -15,11 +15,12 @@ module pc_32_bit #(parameter qInitial = 32'b0)(
 		if (clear) begin
 			q[31:0] = 32'b0;
 		end
-		else if (IncPC) begin
-			q[31:0] = q[31:0] + 1'b1;
-		end 
 		else if (enable) begin
 			q[31:0] = d[31:0];
 		end
+		else if (IncPC) begin
+			q[31:0] = q[31:0] + 1'b1;
+		end 
+
 	end
 endmodule
