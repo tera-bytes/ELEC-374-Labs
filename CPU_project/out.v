@@ -56,17 +56,17 @@ always@(Present_state)
 			
 			end
 			T1: begin
-				#5 PCout <= 0; MARin <= 0; Zlowin <= 0;
-				#15 PCin <= 1; MDRin <= 1; read <= 1; Zlowout <= 1; 
+				#5 PCin <= 1; MDRin <= 1; read <= 1; Zlowout <= 1; 
+				#15 PCin <= 0; MDRin <= 0; read <= 0; Zlowout <= 0; 
 			
 			end
 			T2: begin
-				#5 Zlowout <= 0; MDRin <=0; PCin <= 0; read <= 0;
-				#15 MDRout <= 1; IRin <= 1;
+				#5 MDRout <= 1; IRin <= 1;
+				#15 MDRout <= 0; IRin <= 0;
 			end
 			T3: begin
-				#5 Gra <= 1; Rout <= 1; OutPortin <= 1;
-				#15 Gra <= 0; Rout <= 0; OutPortin <= 0;
+				#5 Gra <= 1; Rin <= 1; OutPortin <= 1;
+				#15 Gra <= 0; Rin <= 0; OutPortin <= 0;
 				
 			end
 			
