@@ -50,19 +50,19 @@ always@(Present_state)
 				{HIout, LOout, ZHIout, 
 					ZLOout, PCout, MDRout, Inportout, Cout} <= 8'b00000000;
 			end
-			T0: begin // see if you need to de-assert these signals
+				T0: begin // see if you need to de-assert these signals
 				#5 PCout <= 1; MARin <= 1; IncPC <= 1; Zlowin <= 1;
 				#15 PCout <= 0; MARin <= 0; IncPC <= 0; Zlowin <= 0;
 			
 			end
 			T1: begin
-				#5 PCout <= 0; MARin <= 0; Zlowin <= 0;
-				#15 PCin <= 1; MDRin <= 1; read <= 1; Zlowout <= 1; 
+				#5 PCin <= 1; MDRin <= 1; read <= 1; Zlowout <= 1; 
+				#15 PCin <= 0; MDRin <= 0; read <= 0; Zlowout <= 0; 
 			
 			end
 			T2: begin
-				#5 Zlowout <= 0; MDRin <=0; PCin <= 0; read <= 0;
-				#15 MDRout <= 1; IRin <= 1;
+				#5 MDRout <= 1; IRin <= 1;
+				#15 MDRout <= 0; IRin <= 0;
 			end
 			T3: begin
 				#5 Gra <= 1; Rin <= 1; OutPortin <= 1;
